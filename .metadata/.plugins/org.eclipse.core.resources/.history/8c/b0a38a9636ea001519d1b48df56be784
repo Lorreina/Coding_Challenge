@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class Valid_Special_Binary_Tree {
+	public void readData(ArrayList<ArrayList<Integer>> input) {
+		
+	}
+}

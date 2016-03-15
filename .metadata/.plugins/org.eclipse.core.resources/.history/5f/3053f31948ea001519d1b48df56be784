@@ -1,0 +1,8 @@
+
+public class Robot_Distance {
+	public static int distance(int[][] location) {
+		
+		
+		return 0;
+	}
+}

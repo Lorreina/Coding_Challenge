@@ -1,0 +1,6 @@
+
+public class Police_Children_Distance {
+	public int[][] distance(int[][] input) {
+		
+	}
+}

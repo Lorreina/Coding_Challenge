@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Remove_Duplicate_Letters&apos; to &apos;Remove_Duplicates_from_Sorted_List&apos;&#x0A;- Original project: &apos;Expedia&apos;&#x0A;- Original element: &apos;Remove_Duplicate_Letters&apos;&#x0A;- Renamed element: &apos;Remove_Duplicates_from_Sorted_List&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Remove_Duplicate_Letters&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Remove_Duplicate_Letters.java[Remove_Duplicate_Letters" matchStrategy="1" name="Remove_Duplicates_from_Sorted_List" qualified="false" references="true" similarDeclarations="false" stamp="1457124457716" textual="false" version="1.0"/>
+</session>

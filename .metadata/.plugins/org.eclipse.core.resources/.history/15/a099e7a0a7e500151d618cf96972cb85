@@ -1,0 +1,6 @@
+
+public class Boss_Employee {
+	public void printRelation(String[] boss, String[] employee) {
+		
+	}
+}

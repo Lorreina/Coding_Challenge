@@ -1,0 +1,10 @@
+
+public class Randomize_Inner_Word {
+	public String randomize(String str) {
+		if (str == null || str.length() == 0) {
+			return str;
+		}
+		
+		return null;
+	}
+}

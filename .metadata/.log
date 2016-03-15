@@ -1,0 +1,1855 @@
+!SESSION 2016-02-14 12:36:48.846 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY WACommon 4 0 2016-02-14 12:37:06.157
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-14 12:37:07.408
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-14 12:37:09.875
+!MESSAGE No profile found: default
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-14 12:37:09.889
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-14 12:37:09.940
+!MESSAGE AWS toolkit core plugin initialized after 2533 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-14 12:37:09.946
+!MESSAGE The current accountId is not found in the system. Switching to the default account.
+
+!ENTRY org.eclipse.ui 2 0 2016-02-14 12:37:09.953
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-14 12:37:09.955
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-14 12:37:09.955
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-14 12:37:10.057
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-14 12:37:10.608
+!MESSAGE Initialized a new Cognito identity us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+!SESSION 2016-02-17 20:46:46.582 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.resources 4 567 2016-02-17 20:46:53.989
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2016-02-17 20:46:53.990
+!MESSAGE Could not read metadata for 'MediaMath'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'MediaMath' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:888)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:902)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:882)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:733)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1588)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2386)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2157)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:463)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:140)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2016-02-17 20:46:53.991
+!MESSAGE The project description file (.project) for 'MediaMath' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:46:59.179
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:47:00.453
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY org.eclipse.core.resources 4 567 2016-02-17 20:47:00.514
+!MESSAGE The project description file (.project) for 'MediaMath' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:47:00.523
+!MESSAGE AWS toolkit core plugin initialized after 1344 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:47:00.530
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-17 20:47:00.535
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-17 20:47:00.544
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-17 20:47:00.546
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-17 20:47:00.547
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-17 20:47:00.714
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-17 20:47:00.717
+!MESSAGE MediaMathisOpenfalse
+!SESSION 2016-02-17 20:50:12.128 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:50:23.067
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:50:24.022
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:50:24.085
+!MESSAGE AWS toolkit core plugin initialized after 1021 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-17 20:50:24.091
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-17 20:50:24.095
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-17 20:50:24.102
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-17 20:50:24.105
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-17 20:50:24.105
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-17 20:50:24.267
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-17 20:50:24.276
+!MESSAGE MediaMathisOpenfalse
+
+!ENTRY org.eclipse.core.resources 4 567 2016-02-17 20:50:24.402
+!MESSAGE The project description file (.project) for 'MediaMath' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-02-17 20:50:48.444
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk9088873206887963423/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-02-17 20:51:35.955
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk9088873206887963423/sdk.zip, File-length: 159989754
+!SESSION 2016-02-18 22:43:53.096 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-18 22:44:04.117
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-18 22:44:05.264
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-18 22:44:05.348
+!MESSAGE AWS toolkit core plugin initialized after 1233 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-18 22:44:05.355
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-18 22:44:05.371
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-18 22:44:05.384
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-18 22:44:05.389
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-18 22:44:05.389
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-18 22:44:05.555
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-18 22:44:05.567
+!MESSAGE CidetalisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-18 22:44:05.567
+!MESSAGE CidetalisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-02-18 22:44:32.135
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk8886681093802303675/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-02-18 22:45:14.518
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk8886681093802303675/sdk.zip, File-length: 160282637
+!SESSION 2016-02-19 20:17:10.491 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-19 20:17:28.985
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-19 20:17:30.298
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-19 20:17:30.372
+!MESSAGE AWS toolkit core plugin initialized after 1390 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-19 20:17:30.379
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-19 20:17:30.387
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-19 20:17:30.400
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-19 20:17:30.403
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-19 20:17:30.403
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-19 20:17:30.571
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-19 20:17:30.575
+!MESSAGE CidetalisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-19 20:17:30.575
+!MESSAGE CidetalisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-19 20:17:30.575
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-19 20:17:30.575
+!MESSAGE Zenefits OA IisNaturefalse
+!SESSION 2016-02-20 01:18:20.120 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 01:18:29.674
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 01:18:31.186
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 01:18:31.313
+!MESSAGE AWS toolkit core plugin initialized after 1643 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 01:18:31.322
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-20 01:18:31.326
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-20 01:18:31.335
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-20 01:18:31.337
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-20 01:18:31.337
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 01:18:31.479
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 01:18:31.483
+!MESSAGE CidetalisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 01:18:31.483
+!MESSAGE CidetalisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 01:18:31.483
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 01:18:31.484
+!MESSAGE Zenefits OA IisNaturefalse
+!SESSION 2016-02-20 14:59:07.299 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 14:59:20.863
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 14:59:22.133
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 14:59:22.196
+!MESSAGE AWS toolkit core plugin initialized after 1336 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-20 14:59:22.204
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-20 14:59:22.206
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-20 14:59:22.213
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-20 14:59:22.216
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-20 14:59:22.216
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 14:59:22.314
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 14:59:22.318
+!MESSAGE CidetalisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 14:59:22.318
+!MESSAGE CidetalisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 14:59:22.318
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-20 14:59:22.318
+!MESSAGE Zenefits OA IisNaturefalse
+
+!ENTRY org.eclipse.ui 4 0 2016-02-20 22:08:41.351
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-02-20 22:08:41.879
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-02-20 22:09:59.204
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 4 2016-02-20 22:17:01.108
+!MESSAGE Referenced part does not exist yet: org.eclipse.jdt.ui.PackageExplorer.
+!SESSION 2016-02-24 16:49:43.573 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-24 16:49:53.838
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-24 16:49:56.161
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-24 16:49:56.212
+!MESSAGE AWS toolkit core plugin initialized after 2377 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-24 16:49:56.220
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-24 16:49:56.223
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-24 16:49:56.233
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-24 16:49:56.234
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-24 16:49:56.235
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-24 16:49:56.369
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-24 16:49:56.373
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-24 16:49:56.373
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-24 16:49:56.373
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-24 16:49:56.373
+!MESSAGE Zenefits OA IisNaturefalse
+
+!ENTRY org.eclipse.recommenders.rcp 2 15 2016-02-24 19:14:44.154
+!MESSAGE Failed to parse news feed
+!STACK 0
+java.net.UnknownHostException: www.codetrails.com: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1255)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getRSSFeed(CheckForProjectNewsJob.java:138)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-02-24 22:08:21.385
+!MESSAGE JavaBuilder handling CoreException
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/WePay/bin/MyHashTable$DataItem.class'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:322)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
+	at org.eclipse.core.internal.resources.File.create(File.java:106)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFileContents(AbstractImageBuilder.java:880)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFile(AbstractImageBuilder.java:859)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:190)
+	at org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:589)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:458)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:367)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.compile(BatchImageBuilder.java:179)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:304)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:61)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:272)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2016-02-24 22:08:21.386
+!MESSAGE A resource exists with a different case: '/WePay/bin/MyHashTable$DataItem.class'.
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-02-24 22:08:21.490
+!MESSAGE JavaBuilder handling CoreException
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: A resource exists with a different case: '/WePay/bin/MyHashTable.class'.
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:322)
+	at org.eclipse.core.internal.resources.Resource.checkDoesNotExist(Resource.java:300)
+	at org.eclipse.core.internal.resources.File.create(File.java:106)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFileContents(AbstractImageBuilder.java:880)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFile(AbstractImageBuilder.java:859)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:190)
+	at org.eclipse.jdt.internal.compiler.Compiler.processCompiledUnits(Compiler.java:589)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:458)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:367)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.compile(BatchImageBuilder.java:179)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:304)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:61)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:272)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:205)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:245)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:300)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:359)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:382)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 275 2016-02-24 22:08:21.491
+!MESSAGE A resource exists with a different case: '/WePay/bin/MyHashTable.class'.
+!SESSION 2016-02-27 00:13:08.446 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-27 00:13:22.635
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-27 00:13:24.469
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-27 00:13:24.610
+!MESSAGE AWS toolkit core plugin initialized after 1978 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-02-27 00:13:24.620
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-02-27 00:13:24.628
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-02-27 00:13:24.646
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-02-27 00:13:24.649
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-02-27 00:13:24.649
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.884
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.889
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.889
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.889
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.889
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.890
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-02-27 00:13:24.890
+!MESSAGE Zenefits OA IisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-02-27 00:13:43.410
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk4325418494723132730/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-02-27 00:14:26.434
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk4325418494723132730/sdk.zip, File-length: 160281074
+
+!ENTRY org.eclipse.ui 4 0 2016-02-27 16:28:59.692
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-02-27 16:30:32.999
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-02-27 22:10:55.823
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+!SESSION 2016-03-01 01:54:14.475 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-01 01:54:26.045
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-01 01:54:27.560
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-01 01:54:27.670
+!MESSAGE AWS toolkit core plugin initialized after 1631 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-01 01:54:27.680
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-01 01:54:27.692
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-01 01:54:27.707
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-01 01:54:27.709
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-01 01:54:27.709
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.844
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.849
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.849
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.849
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.849
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.850
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.850
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.850
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-01 01:54:27.850
+!MESSAGE Zenefits OA IisNaturefalse
+!SESSION 2016-03-02 22:13:57.099 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-02 22:14:07.614
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-02 22:14:08.933
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-02 22:14:09.057
+!MESSAGE AWS toolkit core plugin initialized after 1445 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-02 22:14:09.066
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-02 22:14:09.073
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-02 22:14:09.087
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-02 22:14:09.091
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-02 22:14:09.091
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.316
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.319
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.319
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.319
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.320
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.320
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.320
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.320
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-02 22:14:09.320
+!MESSAGE Zenefits OA IisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-03-02 22:14:10.777
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk5065747682045889685/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-03-02 22:14:55.097
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk5065747682045889685/sdk.zip, File-length: 160509574
+
+!ENTRY org.eclipse.ui 4 0 2016-03-03 02:04:30.779
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-03-03 13:27:10.828
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-05 19:51:42.006 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-05 19:51:53.090
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-05 19:51:54.489
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-05 19:51:54.617
+!MESSAGE AWS toolkit core plugin initialized after 1529 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-05 19:51:54.626
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-05 19:51:54.636
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-05 19:51:54.654
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-05 19:51:54.656
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-05 19:51:54.657
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.877
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.883
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.883
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.883
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.883
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.884
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.884
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.884
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.884
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.884
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.885
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.885
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-05 19:51:54.885
+!MESSAGE Zenefits OA IisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-03-05 19:52:05.603
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk2933548702682058917/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-03-05 19:52:51.506
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk2933548702682058917/sdk.zip, File-length: 160684276
+!SESSION 2016-03-06 18:36:15.123 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-06 18:36:47.414
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-06 18:36:49.110
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-06 18:36:49.198
+!MESSAGE AWS toolkit core plugin initialized after 1787 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-06 18:36:49.206
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-06 18:36:49.217
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-06 18:36:49.232
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-06 18:36:49.234
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-06 18:36:49.234
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.491
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.499
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.499
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.499
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.500
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.500
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.500
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.500
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.501
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.501
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.501
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.501
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.502
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.502
+!MESSAGE Zenefits OA IisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-06 18:36:49.502
+!MESSAGE Zenefits OA IisNaturefalse
+
+!ENTRY org.eclipse.ui 4 0 2016-03-07 01:14:28.328
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-08 17:42:27.714 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-08 17:42:41.857
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-08 17:42:43.556
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-08 17:42:43.655
+!MESSAGE AWS toolkit core plugin initialized after 1801 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-08 17:42:43.665
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-08 17:42:43.672
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-08 17:42:43.712
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-08 17:42:43.716
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-08 17:42:43.716
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.919
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.923
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.923
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.923
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.924
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.925
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.925
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.925
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-08 17:42:43.925
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-10 14:09:02.093
+!MESSAGE Unable to acquire PluginConverter service during generation for: /Applications/Eclipse.app/Contents/Eclipse/plugins/com.microsoftopentechnologies.wacommon.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-10 14:09:02.139
+!MESSAGE Unable to acquire PluginConverter service during generation for: /Applications/Eclipse.app/Contents/Eclipse/plugins/com.persistent.winazure.eclipseplugin.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-10 14:09:02.169
+!MESSAGE Unable to acquire PluginConverter service during generation for: /Applications/Eclipse.app/Contents/Eclipse/plugins/com.microsoftopentechnologies.wacommon.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2016-03-10 14:09:02.174
+!MESSAGE Unable to acquire PluginConverter service during generation for: /Applications/Eclipse.app/Contents/Eclipse/plugins/com.persistent.winazure.eclipseplugin.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2016-03-10 14:09:12.842
+!MESSAGE No repository found at file:/Applications/Eclipse.app/Contents/Eclipse/configuration/org.eclipse.osgi/166/data/listener_1925729951/.
+!SESSION 2016-03-11 22:51:13.938 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-11 22:51:24.355
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-11 22:51:25.734
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-11 22:51:25.839
+!MESSAGE AWS toolkit core plugin initialized after 1488 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-11 22:51:25.848
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-11 22:51:25.859
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-11 22:51:25.874
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-11 22:51:25.877
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-11 22:51:25.877
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.043
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.051
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.051
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.051
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.053
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.053
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.053
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.055
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.055
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.055
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.055
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.056
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.057
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.058
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-11 22:51:26.058
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-03-11 22:51:28.998
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk225218955353335935/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-03-11 22:52:14.497
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk225218955353335935/sdk.zip, File-length: 161836165
+!SESSION 2016-03-13 20:53:03.129 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/lorreina/Documents/workspace/Coding Challenge -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-13 20:53:11.489
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-13 20:53:13.096
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-13 20:53:13.172
+!MESSAGE AWS toolkit core plugin initialized after 1685 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-13 20:53:13.180
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-13 20:53:13.195
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-13 20:53:13.207
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-13 20:53:13.209
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-13 20:53:13.209
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.361
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.366
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.367
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.367
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.367
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.367
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.367
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.368
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.368
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.368
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.368
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.368
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.369
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.369
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-13 20:53:13.369
+!MESSAGE ZenefitsisNaturefalse
+!SESSION 2016-03-14 16:43:54.824 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-14 16:44:05.430
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-14 16:44:07.113
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-14 16:44:07.198
+!MESSAGE AWS toolkit core plugin initialized after 1771 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-03-14 16:44:07.206
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-03-14 16:44:07.211
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-03-14 16:44:07.223
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-03-14 16:44:07.225
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-03-14 16:44:07.226
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.424
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.430
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.430
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.432
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.433
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.434
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.434
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.435
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.435
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.435
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.435
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.436
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.436
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.436
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-03-14 16:44:07.436
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.ui 4 0 2016-03-14 16:45:44.784
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-03-14 16:48:12.608
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-03-14 16:49:48.424
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.swt.widgets.Control.internal_new_GC(Control.java:2124)
+	at org.eclipse.swt.graphics.GC.cocoa_new(GC.java:210)
+	at org.eclipse.swt.widgets.Tree.sendMeasureItem(Tree.java:2596)
+	at org.eclipse.swt.widgets.Tree.cellSize(Tree.java:288)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5582)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper_stret(Native Method)
+	at org.eclipse.swt.widgets.Widget.expansionFrameWithFrame_inView(Widget.java:814)
+	at org.eclipse.swt.widgets.Tree.expansionFrameWithFrame_inView(Tree.java:1274)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5961)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend_bool(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSRunLoop.runMode(NSRunLoop.java:42)
+	at org.eclipse.swt.widgets.Display.sleep(Display.java:4740)
+	at org.eclipse.ui.application.WorkbenchAdvisor.eventLoopIdle(WorkbenchAdvisor.java:368)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.eventLoopIdle(IDEWorkbenchAdvisor.java:858)
+	at org.eclipse.ui.internal.Workbench$3.eventLoopIdle(Workbench.java:517)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1132)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)

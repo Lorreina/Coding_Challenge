@@ -1,0 +1,76 @@
+// This is the text editor interface. 
+// Anything you type or change here will be seen by the other person in real time.
+
+/*
+Given this interface:
+
+interface Iterator<T> {
+  boolean hasNext();
+  T next();
+}
+
+Write an implementation of DeepIterator, such that this code:
+
+// Pseudo-coded array.
+List<Object> list = [1, 2, [3, [4], 5]];
+Iterator<Integer> it = new DeepIterator(list.iterator());
+while (it.hasNext()) {
+  System.out.println(it.next());
+}
+
+Will output:
+
+1
+2
+3
+4
+5
+*/
+
+class DeepIterator implements Iterator {
+    Stack<Integer> stack = new Stack<Integer> ();
+    Stack<List<Object>> listStack = new Stack<List<Object>> ();
+    
+    public DeepIterator(...) {
+        // TODO
+        if (list.size() != 0) {
+            stack.push(0);
+            listStack.push(list);
+        }
+    }
+
+    boolean hasNext() {
+        // TODO
+        if (listStack.size() == 0) {
+            return false;
+        }
+        // listStack = {list}
+        // stack = {2}
+        if (listStack.peek().size() == stack.peek()) {
+            return false;
+        }
+        
+        while (listStack.peek().get(stack.peek()) instanceOf List) {
+            listStack.put(listStack.peek().get(stack.peek());
+            stack.push(0);
+        }
+        return true;
+    }
+    
+    T next() {
+        // TODO
+        if (hasNext()) {
+            int index = stack.peek();
+            T result = listStack.peek().get(index);
+            //[3,[4], 5] stack == 0
+            while (listStack.peek().size() - 1 == stack.peek()) {
+                stack.pop();
+                listStack.pop();
+            }
+            
+            stack.put(stack.pop() + 1);
+            
+        }
+        return result;
+    }
+}

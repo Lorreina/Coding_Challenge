@@ -1,0 +1,48 @@
+1. Basic Calculator 
+√2. Merge Two Sorted Lists
+√3. Invert Binary Tree
+√4. 3 Sum
+√5. 将一棵树全部的leaf node 连成double linked list
+   给你一个BST，把所有的leaf node连成doubly linked list然后return。注意leaf不一定在同一层
+√6. 给一个char的字符串，找出里面不重复的字符
+√7. Find Minimum in Rotated Sorted Array
+8. Validate Sudoku (第一次把check row, check column, check block分开写的。后来要求写在一个循环里，说他们做validate credit card的时候就是这么去优化代码的。
+	??用一组hashset优化下，一共只遍历一次数独
+√9. Lowest Common Ancestor of a Binary Tree
+√10. Minimum Size Subarray Sum
+√11. Evaluate Reverse Polish Notation
+12. Return the number of distinct palindromic substrings for a given string.
+√13. Check whether two strings is anagram
+√14. Merge two sorted array
+15. sort a linked list
+√16. reverse words in a string
+17. a. 给一个字符串，格式是：xxx IP: 255.255.255.100 include: wepay.com，然后一个文件中包含多个这样的字符串，提取所有的IP地址
+	b. 还是这个格式，然后每次遇到xxx.com，提取它的对应的IP地址
+18. 一个文件夹“root”，请找出root底下所有的包含文件名为“src"的文件的路径，值得注意的是，其中有可能包括名字为”src"的文件夹，需要排除在外
+    这个我用Trie和queue结合起来做的
+19. Tree Inorder Iterator 
+√20. Add two linked lists. Return as a linked list
+21. Given an array of integers, a, return the maximum difference of any pair of numbers such that the larger integer in the pair occurs at a higher index (in the array) than the smaller integer type of question...
+22. palindrome: 找出所有的substring是palindrome，返回一个有多少个distinct的，我知道应该用dp，兰儿时间来不及了，我就直接简单粗暴brute force了。。。所以最后两个test case没过，感觉是大数据吧～
+23. isAnagram: 先写了一个开个ascii码长的数组，然后他又问我可以减小空间么，然后他说，就是用个hashmap，然后又写了一遍
+24. 给一个String比如10abc-5ghi3xyz，返回所有数字相加的结果：10-5+3=8
+
+
+概念
+1. TCP VS UDP
+2. Thread VS Process
+3. Semephore vs Mutex
+4. 打开www.google.com过程，按下回车之后的过程
+5. raid 0123456是什么
+6. grep指令
+7. heap vs stack
+8. the space complexity and time complexity of sorting algorithm
+9. Amount the four given sorting algorithms, name the one with least space allocation: merge sort, bubble sort, shell sort, bucket sort 
+10. What is the difference between inheritance in PHP vs. Javascript?
+11. Using PHP, how would you take a string containing the letters "GOOGLE" and remove the duplicate letters to output "GOGLE" (without using array_unique)? 
+
+设计
+1. *Implement a Data structure to store data like [1, 2, [3, [4], 5], 6]
+   * Write a Iterator( hasNext(),  next() )
+   老美，linkedin过来的principal engineer，上来就问deep iterator。。大概就是给你[1,[2],[3,[4,[5]]]]，设计一个iterator，每次next返回的结果是1,2,3,4,5。貌似是个linkedin的题，用个interator的stack就行。然后又问了怎么判断一个图是不是二分图和写一个sqrt(double x)的函数(x >= 0)。
+ 

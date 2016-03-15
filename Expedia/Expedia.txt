@@ -1,0 +1,62 @@
+1. 找一个SubMatrix是否存在另一个大Matrix里，存在返回true，否则返回false。
+√2. 找linkedlist中点。follow up：偶数长度list返回Null
+√3. A un-sorted singlely linkedlist -> how to find out the duplicate and delete the node.
+√4. string permutation
+√5. largest consecutive part of a array
+6. 数独，有压力，但是解决方案给出了，recursive嘛...
+√8. Merging two sorted array. example A[1, 3, 5] B[2, 4, 5, 6] return Array[1, 2, 3, 4, 5, 5, 6] 
+	follow up: only use single loop.
+√9. if a string contents with [*] {*} (*) pattern are valid , Given string s, find out s is valid or not. 
+√10. write a stack and flatten a binary search tree.
+11. How to find K most frequently occurring elements.  
+√12. implement in-order tree traversal, both recursively and iteratively
+13. Find all the permutations of a string. 
+√14. Reverse a string.
+√15. Remove duplicates in a string.
+√16. Given 2 integer arrays, find common elements.  
+17. Converting two D char array to a int array with space efficient as I can. 
+18. Update all the elements in the same rows and columns to 0 in a matrix if encounter 0  
+√19. reverse the order of the words in a string
+20. Given a set of pairs
+	e.g (5,4) (6,2) (9,3) (2,5) (4,9)
+	Find the longest contigious sequence
+√21. You are given a string variable that holds "aabbcc". Given the string, how do we output a2b2c2? 
+√22. You are given an array where each index holds either a 0 or 1. How do we move all the 0's to the left side of the array and the 1's to the right side of the array?   
+23. Write a function that can be used to generate factorials.
+√24. Implement a stack  
+√25. Find the intersection of two array of integers.
+√26. find common ancestor of two nodes.  
+27. Given two lists, return the non-common elements.
+√28. Largest Palindrome in a string. 
+√29. Find if a string is rotation of another string ex. abcd , dabc is rotation of abcd
+√30. Find min distance between two character in a string ex. a x c a e r r a d e min dis between a and e is 1
+31. Given 2 rectangles, find out the smaller rectangle which is formed by the intersection of the larger rectangles.
+32. Given a 2D matrix filled with 1s and 0s, find out the number of connected components of 1s. 
+33. given a string of a's b's and c's which can come in any order any number of times, reduce the string to a string in which every combination of two different characters will be replaced by the third one (ab will become c, bc a, cb a, ...). Keep on doing this tip possible. Mind the fact that in place and new string will give separate answers, you can choose any approach.
+	e.g. aabbcc becomes bb ( aabbcc -> acac -> bb)
+34.  Give me 5 different ways of finding the median (middle   element) of a linked list. For the sake of simplicity, assume the list has odd number of ints. Also mention the runtime for each. Follow up: What's the fastest way you could find the median? What is the runtime? Oh.. and yes, code your answer(s) in any language of your preference. 
+
+
+概念
+1. 继承
+2. 一个debug的题 大概是二维数组两次for循环 , 二维数组的长度和循环的长度写反了然后会溢出
+3. compare soap vs rest.
+4. What do you not like about scrum?
+5. Access modifiers for classes and interfaces.  
+6. Write a factorial recursive function
+7. How will you generate random numbers.  
+8. Downside of multiple inheritance.  
+9. Explain i++  
+10. Java concept, abstraction,Encapsulation, Polymorphism, Inheritance.  
+11. Pros and Cons of multiple inheritance.  
+12. how to implement the DFS and BFS
+13. TCP vs UDP
+14. what is generic and its advantage
+15. Google's 2 egg problem, the burning rope problem etc.
+16. How the random number generator works  
+
+设计
+1. 如何design一个九宫格里三个一行/一列/对角线 就赢了的游戏。
+2. How to use big data in mobile apps.  
+3. Design a black jack card game(Implement Poker)
+4. design a parking garage.

@@ -1,0 +1,38 @@
+import java.util.Stack;
+
+public class Find_Pair_in_BST {
+	public boolean isPairPresent(TreeNode root, int k) {
+		if (root == null) {
+			return false;
+		}
+		// Create two stacks. s1 is used for normal inorder traversal
+	    // and s2 is used for reverse inorder traversal
+		Stack<TreeNode> stack1 = new Stack<TreeNode> ();
+		Stack<TreeNode> stack2 = new Stack<TreeNode> ();
+		
+		boolean done1 = false, done2 = false;
+		int val1 = 0, val2 = 0;
+		
+		TreeNode curr1 = root, curr2 = root;
+		
+		while (true) {
+			while (done1 == false) {
+				
+			}
+			
+			while (done2 == false) {
+				
+			}
+		}
+		
+		
+		return false;
+	}
+	
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		TreeNode(int x) { val = x; }
+	}
+}

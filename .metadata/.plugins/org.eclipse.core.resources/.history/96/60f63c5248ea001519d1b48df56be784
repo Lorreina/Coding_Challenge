@@ -1,0 +1,14 @@
+
+public class Robot_Distance {
+	public static int distance(int[][] location) {
+		int[][] original = new int[location.length][location[0].length];
+		ArrayList<Integer> robot = new ArrayList<Integer> ();
+		for (int i = 0; i < location.length; i++) {
+			for (int j = 0; j < location[0].length; j++) {
+				
+			}
+		}
+		
+		return 0;
+	}
+}

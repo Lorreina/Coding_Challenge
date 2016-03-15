@@ -1,0 +1,21 @@
+import java.util.Stack;
+
+public class Find_Pair_in_BST {
+	public boolean isPairPresent(TreeNode root, int k) {
+		if (root == null) {
+			return false;
+		}
+		Stack<TreeNode> stack1 = new Stack<TreeNode> ();
+		Stack<TreeNode> stack2 = new Stack<TreeNode> ();
+		
+		
+		return false;
+	}
+	
+	public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		TreeNode(int x) { val = x; }
+	}
+}

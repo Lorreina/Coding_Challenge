@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Implement_Trie_Prefix_Tree&apos; to &apos;Trie&apos;&#x0A;- Original project: &apos;Microsoft&apos;&#x0A;- Original element: &apos;Implement_Trie_Prefix_Tree&apos;&#x0A;- Renamed element: &apos;Trie&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Implement_Trie_Prefix_Tree&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Implement_Trie_Prefix_Tree.java[Implement_Trie_Prefix_Tree" matchStrategy="1" name="Trie" qualified="false" references="true" similarDeclarations="false" stamp="1456636213026" textual="false" version="1.0"/>
+</session>

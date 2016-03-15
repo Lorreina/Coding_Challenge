@@ -1,0 +1,14 @@
+1. 一个array，找一个所有左边都比它小，右边都比它大的数
+	其实用array左右扫两遍，存左边目前最大值，和右边目前最小值，然后再扫一遍比较就可以了
+2. trapping rain water
+3. 将数组中的奇偶数据分别split到两边，two pointer就可以了
+4. 找到一个array的subarray，使subarray得sum=总sum的一半，我先用的backtracking和剪枝做的，问了下时间复杂度，然后时间不够了，dp的方法没想完全， 烙印提示用背包算法来做
+5. leetcode原题group anagram, 问了时间复杂度，然后我是用sort+hashmap做的，followup问如果不用sort的话怎么做，对应的复杂度是多少
+6. 一个带权重的数组，根据权重随机去抽数组元素
+7. ongest increasing path in a matrix， 不过此处相邻元素只能增1. 我先做了bfs search的方法，然后加了cache来优化。 问了复杂度。
+
+
+
+
+设计：
+1. 一道设计题，假设客户和QA engineer之间不能直接交流，需要一个程序来将客户的需求相应forward到工程师那边，然后同样把比较技术性的回复转换成客户能理解的东西，如何设计中间程序，需要什么数据结构，要记录哪些东西，数据库怎么设计。 这题比较开放，瞎扯就行了

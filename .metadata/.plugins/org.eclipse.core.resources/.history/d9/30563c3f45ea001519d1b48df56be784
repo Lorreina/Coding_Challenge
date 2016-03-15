@@ -1,0 +1,10 @@
+
+public class Police_Children_Distance {
+	public int[][] distance(int[][] location) {
+		int[][] dis = new int[location.length][location[0].length];
+		
+		
+		
+		return dis;
+	}
+}

@@ -1,0 +1,76 @@
+// This is the text editor interface. 
+// Anything you type or change here will be seen by the other person in real time.
+
+// Given a list of integer intervals, implement a function to minimize the number of overlapping or consecutive ones.
+// For example:
+// Input: [5, 8], [3, 5], [-1, 2], [10, 12], [100, 200], [11, 20], [150, 3000]
+// Output: [-1, 8], [10, 20], [100, 3000]
+
+import java.util.*;
+
+public class Solution {
+    public static class Interval {
+        public Integer start;
+        public Integer end;
+        public Interval (int start, int end) {
+            this.start = start;
+            this.end = end;
+        }
+    }
+    
+    public static List<Interval> mergeInterval(List<Interval> intervals) {
+        if (intervals == null || intervals.size() <= 1) {
+            return intervals;
+        }
+        
+        
+        // sort the intervals
+        Collections.sort(intervals, new Comparator<Interval> () {
+            public int compare(Interval interval1, Interval interval2) {
+                if (interval1.start != interval2.start) {
+                    return interval1.start.compareTo(interval2.start);
+                } else {
+                    return interval1.end.compareTo(interval2.end);
+                }
+            }
+        });
+        
+        //[5, 8], [3, 5], [-1, 2], [10, 12], [100, 200], [11, 20], [150, 3000]
+        // ordered intervals:  [-1, 2],[3, 5],[5, 8],
+        
+        List<Interval> result = new ArrayList<Interval> ();
+        Interval tmp = intervals.get(0);
+        
+        for (int i = 1; i < intervals.size(); i++) {
+            if (intervals.get(i).start >= tmp.start && intervals.get(i).start <= tmp.end + 1) {
+                tmp.end = Math.max(intervals.get(i).end, tmp.end);
+            } else {
+                result.add(tmp);
+                tmp = intervals.get(i);
+            }
+        }
+        
+        result.add(tmp);
+        
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        ArrayList<Interval> input = new ArrayList<Interval> ();
+        //[5, 8], [3, 5], [-1, 2], [10, 12], [100, 200], [11, 20], [150, 3000]
+        input.add(new Interval(5,8));
+        input.add(new Interval(3,5));
+        input.add(new Interval(-1,2));
+        input.add(new Interval(10,12));
+        input.add(new Interval(100,200));
+        input.add(new Interval(11,20));
+        input.add(new Interval(150,3000));
+        
+        List<Interval> output = mergeInterval(input);
+        for (int i = 0; i < output.size(); i++) {
+            System.out.print(output.get(i).start);
+            System.out.print(" ");
+            System.out.println(output.get(i).end);
+        }
+    }
+}

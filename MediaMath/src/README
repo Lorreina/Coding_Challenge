@@ -1,0 +1,27 @@
+Author: Yanran Hao (yanranh@cs.cmu.edu)
+
+Instruction:
+    1. Price_Calculate_file.py 
+        It is the program for taking an csv file as an input.
+        The input csv file is named "sample_data.csv" and should be stored at the same directory as Price_Calculate_file.py.
+        To run this program, type "make csv"
+    2. Price_Calculate_cmd.py
+        It is the program for taking an command line as an input.
+        You can type various lines as input. The program will start calculating the bill once you type an extra "enter".
+        To run this program, type "make command_line"
+    3. Price_Update.py
+        It is the program which runs continuously and takes input from command line.
+        To run this program, type "make continue"
+    4. The solutions are stored in the ./root directory. Do not delete it before running the program.
+
+Explaination of algorithm:
+    Take the algorithm in Price_Calculate_file.py: 
+    Suppose there's n ingredients
+    1. Time complexity
+        1) The time complexity of processing matrix is O(n^3)
+        2) The time complexity of getting root depends on the number of free variables.
+          Suppose the number of free variables is m, and the average length of valid range of free varialbes (the range can be 1-40 or smaller, depends on the input value of equation) is c, then the time complexity is O(n*(c^m)).
+    2. Space complexity 
+        1) The space complexity of storing and processing the matrix is O(n^2). Since the program don't need extra space for copy matrix when there are free variables.
+        2) The space complexity of storing the root depends on the number of valid root. If the number of root is s, then the space complexity is O(n*x).
+

@@ -1,0 +1,20 @@
+import java.util.HashSet;
+
+public class CacheSet {
+	private static CacheSet instance = null;
+	private static HashSet<Integer> set;
+	public static CacheSet getInstance() {
+		if (instance == null) {
+			synchronized(CacheSet.class) {
+				if (instance == null) {
+					instance = new CacheSet();
+				}
+			}
+		}
+		return instance;
+	}
+	
+	private CacheSet() {
+		set = new HashSet<Integer> ();
+	}
+}

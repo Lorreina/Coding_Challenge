@@ -1,0 +1,65 @@
+√1. LRU cache
+2. Word search 及变形
+√3. iterative tree traversal
+√4. bit manipulation
+√5. merge two sorted array.
+√6. merge K sorted array.
+7. Word Break II
+8. write strncmp 的变形题
+9. 变形的palindrom。  现在abc bbb ccc bbb abc 也算palindrom。
+10. Stock Price I
+√11. Rotate Array
+√12. populate next pointer II的变形。不同的是，每一层最后一个node要指向下一层的第一个node。跪在这一轮，  因为紧张我脑子里就一直记得的是原题的解法。 纠结半天， 未果。然后他问我能不能写用queue来实现。我快速写了queue。然后就让我分析用queue的时候是怎么做的，然后如何不用queue来实现。。其实我还是没有get point。。反正就是一直卡在那了，可能因为最后一轮了也松懈了。然后在最后时刻我貌似提出个解法跟她讲了他说是对的（但是我现在觉得其实是错的），但是就是有点复杂。。然后直接告诉我了他的解法。然后他的解法我到现在还没有消化。大概意思就是还是用两个node，一个记录队列的头，一个记录队列的尾，我们level order的时候用这两个指针来keep 队列。看上去是简单很多。
+13. binary tree 找node，规定用bfs. follow up: 找subtree
+14. 类似leetcode walls and gates
+15. permutation
+16. 有一个sorted array 往右移了，求移了几步。input：［4，5，6，1，2，3］ output：3
+17. linkedlist cycle
+18. Serialize and Deserialize Binary Tree
+19. swap node pair
+20. 实现一个stack，除了基本功能外还要实现getmin()功能。Follow up是怎么实现O(1)的算法。继续follow up是把stack换乘queue
+21. a list of words, find the longest word made of other words in the list.
+22. reverse linked list
+23. implement一个queue你怎么做？ 用array，或者linkedlist；方法有enqueue，dequeue.如果让你用stack 去implement queue，怎么做？ 用两个栈。插入的时候，如果s1不为空，就把s1倒入s2，然后在s1插入数据，再把s2里的数倒回来。取的时候，直接s1.pop就好了
+24. reverse words in string
+25. 一个string删除前后的space每个单词之间也只留一个空格
+26. wiggle sort 原题贪心就能做
+27. 找出bst里面两个最大得数，就是迭代做法的中序遍历修改一个就好了
+28. 求一个树的高度
+29. 一个二叉树，有parent，求最近公共祖先, follow up: 没有parent。 Leetcode原题
+30. 求无向图里面联通分量的个数，DFS就好了
+31. 判断一个int 的 bit represent 是不是回文
+32. 给0.5 返回1/2, 给0.25，返回1/4，给0.3，返回3/10。想了一下大概可以用binary search...
+33. 给一个java file, 删除所有有comments的行，comments有以下形式，
+//
+/*
+ *
+ */
+/* ... */
+34. 有一堆整数，找出两个数最大的乘积
+35. Given two strings s and t, write a function to determine if t is an anagram of s.
+
+
+
+
+Basic:
+1.	process， thread的好处，区别，问了好几次，可以写个lock
+2.	enlarge hashset in place and not in place
+3.	跟小孩解释recursion
+4. 手算一个时间的时针和分针的角度，没错在黑板上手算。
+5. How to test a vending machine
+6. 9个球，有一个重，其余外型一样，如何两次找出有问题的那个
+
+
+
+
+
+
+
+System Design:
+1. System design。with 1 trillion data with （documentID，userID）, how to quickly find the row that with highest frequency.
+2. System Design：Design system that will get top 100 deals from Internet
+3. 一個游戲。MxN 的 矩陣。 可隨意摸掉一格的一條邊。但是，摸掉后，剩下的必須是 長方形或正方形。write a function to see whether we can remove that line. 挂在這題了。
+4. 设计一个distributed file system cache system, 其实就是一个LRU-cache，不过要用distributed file-system, 这题答的不好但是也跟面试官呵呵过去了。
+5. 设计一个爬虫游戏（爬虫就是一个坐标linkedlist，头有三个方向可移动，剩下的部分只能移动到它parent之前的位置），然后又问了些怎样scale,如何避免不同线程里的worm之前collision的问题。
+6. 

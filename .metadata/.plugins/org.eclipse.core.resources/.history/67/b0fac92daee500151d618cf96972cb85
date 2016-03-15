@@ -1,0 +1,25 @@
+
+public class Randomize_Inner_Word {
+	public String randomizeWord(String str) {
+		if (str == null || str.length() == 0) {
+			return str;
+		}
+		String[] words = str.split(" ");
+		for (int i = 0; i < words.length; i++) {
+			String tmp = ramdomize(words[i]);
+			words[i] = tmp;
+		}
+		return null;
+	}
+	
+	private String randomize(String word) {
+		if (word == null || word.length() < 3) {
+			return word;
+		}
+		
+		double[] randomNum = new double[word.length() - 2];
+		for (int i = 0; i < randomNum.length; i++) {
+			randomNum[i] = Math.random();
+		}
+	}
+}

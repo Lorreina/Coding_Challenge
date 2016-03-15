@@ -1,0 +1,13 @@
+import java.util.Deque;
+import java.util.Iterator;
+import java.util.List;
+
+public class Zigzag_Iterator {
+	public class ZigzagIterator {
+		Deque<Iterator> itr;
+		public ZigzagIterator (List<Integer> list) {
+			itr = new ArrayDeque(list);
+		}
+	}
+	
+}

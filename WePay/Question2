@@ -1,0 +1,60 @@
+// This is the text editor interface. 
+// Anything you type or change here will be seen by the other person in real time.
+
+(+ 12 4) returns 16
+
+(- 10 0) returns 10
+
+(+ (* 2 3) (/ (+ 4 5) 3)) returns 9
+
+Compute the value given the string. The four operators are +, -, *, and /.
+
+int compute(String s) {
+    if (s == null || s.length() == 0) {
+        return (Integer) null;
+    }
+    
+    Stack<Character> op = new Stack<Character> ();
+    Stack<Integer> nums = new Stack<Integer> ()
+    int num = 0;
+    int count = 0;
+    
+    for (int i = 0; i < s.length(); i++) {
+        char c = s.charAt(i);
+        int j;
+        if (c > '0' && c <= '9') {
+            for (j = i; j < s.length(); j++) {
+                if (c > '0' && c <= '9') {
+                    num = num * 10 + (c - '0');
+                } else {
+                    nums.push(num);
+                    num = 0;
+                    break;
+                }
+            }
+            i = j;
+        }
+        c = s.charAt(i);
+        if (c == ' ' || c == '(') {
+            continue;
+        } else if (c == ')') {
+            int tmp = calculate(nums.pop(), nums.pop(), op.pop());
+            nums.push(tmp);
+        } else {
+            op.push(c);
+        }
+    }
+    return nums.pop();
+}
+(- 10 0) returns 10
+private int calculate(int y, int x, char op) {
+    if (op == '+') {
+        return x + y;
+    } else if (op == '-') {
+        return x - y;
+    } else if (op == '*') {
+        return x * y;
+    } else {
+        return x / y;
+    }
+}

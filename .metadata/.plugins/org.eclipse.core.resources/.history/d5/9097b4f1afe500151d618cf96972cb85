@@ -1,0 +1,8 @@
+
+public class Find_Pattern {
+	public int findPattern(String s1, String s2) {
+		
+		
+		return 0;
+	}
+}

@@ -1,0 +1,50 @@
+√1. 一个array，找一个所有左边都比它小，右边都比它大的数
+	其实用array左右扫两遍，存左边目前最大值，和右边目前最小值，然后再扫一遍比较就可以了
+√2. trapping rain water，follow up要求空间负责度O(1)。
+√3. 将数组中的奇偶数据分别split到两边，two pointer就可以了
+4. 找到一个array的subarray，使subarray得sum=总sum的一半，我先用的backtracking和剪枝做的，问了下时间复杂度，然后时间不够了，dp的方法没想完全， 烙印提示用背包算法来做(subarray可以不连续)
+√5. leetcode原题group anagram, 问了时间复杂度，然后我是用sort+hashmap做的，followup问如果不用sort的话怎么做，对应的复杂度是多少
+6. 一个带权重的数组，根据权重随机去抽数组元素
+7. longest increasing path in a matrix， 不过此处相邻元素只能增1. 我先做了bfs search的方法，然后加了cache来优化。 问了复杂度。
+8. combinatin of a string, length = k. 就是subset，只不过每个sub要求length = k。
+9. valid BST。 原题。
+10. 给一个Node数组，让判断数组里所有的Node是不是在一颗binary tree上，如果是则返回root,如果不是（比如有环，比如分成了两颗树）返回null
+√11. String Match: http://www.1point3acres.com/bbs/thread-171659-1-1.html
+√12. 老题，给你一堆老板和员工的关系，让你打出树形的顺序
+	http://www.1point3acres.com/bbs/thread-156187-1-1.html
+√13. 海洋，岛 http://www.1point3acres.com/bbs/thread-127087-1-1.html
+14. leetcode 原题zigzag iterator 只不过楼主是直接做K的不是两个list. 用Queue
+15. if & endif 加缩进版本。类似于leetcodegenerate 括号 面经原题。
+√16. 实现一个cacheset要求add(value),serach(value),delete(value)和deleteAll()都是O(1)
+	value就是int的范围，然后可以用的空间总共有4GB，其实就是一个巨大的hashtable，然后key就是insert 进去的value， value就是一个timestamp，deleteAll()就是把所有的timestamp invalidate就好了
+
+√18. 找peak，可能是min peak，也可能是max peak
+	// [23, 40, 50, 60, 80, 75, 74, 35] - 80
+	// [90, 80, 70, 60, 65, 75] - 60
+√19. {23, 90, 50, 60, 80, 75, 74, 35};
+	返回第一个peak，O(n)的方法就行了
+20. http://www.1point3acres.com/bbs/thread-133338-1-1.html
+	√1. randomize inner word 2. Trie Data Structure
+21. http://www.1point3acres.com/bbs/thread-131422-1-1.html
+√22. http://www.1point3acres.com/bbs/thread-130278-1-1.html
+23. http://www.1point3acres.com/bbs/thread-145290-1-1.html
+√24. Input: A binary search tree, consisting of integers.  And a number k. 
+	Output: True if there are two nodes a and b in the tree, such that a.value + b.value = k
+            False otherwise
+	给了 time: O(n), space: O(n) 和一个 time: O(nlogn), space: O(logn) 的方法，都不满意，让我给 time: O(n), space: O(logn)的
+	我想到用inorder和reverse inorder traversal 同时做，然后前后各一个pointer，但是还没想清楚怎么存中间值时间就到了，要我问他问题，面试结束之后20min内发email给他写好的code。
+	最后10min问他做什么的，他说frontend 和backend 同时都做，然后balabala没仔细听了。。。. 
+	结束后我就按照http://www.geeksforgeeks.org/find-a-pair-with-given-sum-in-bst/ 的思路写了发过去了＝ ＝   随缘
+25. 有个vector<Iterator>，里面装了m个iterator，每个iterator是一个vector<int>的iterator，假设有next和hasNext接口，让你实现一个Zigzag traversal iterator
+	[[1,2,3]
+  	 [5,4]
+  	 [6,7,8,9]]
+	一直调用next会返回1,5,6,2,4,7,3,8,9，先用了O(mn)的方法，m是最长的iterator的数组的长度，又改成queue或者cycle linkedlist，复杂度是O(k), k是总元素个数
+	Follow Up是，如果iterator有prev和hasPrev接口，实现Zigzag iterator的prev和hasPrev，用C++的deque和stack
+
+
+
+设计：
+1. 一道设计题，假设客户和QA engineer之间不能直接交流，需要一个程序来将客户的需求相应forward到工程师那边，然后同样把比较技术性的回复转换成客户能理解的东西，如何设计中间程序，需要什么数据结构，要记录哪些东西，数据库怎么设计。 这题比较开放，瞎扯就行了
+2. 画了一张数据库的表，有id, firstname, lastname, studentid, graduate/undergraduate这些列，问LZ如果在studentid这列加index好吗，在graduate/undergraduta这列加index好吗，讨论完了以后说这只是warmup
+3. winner board, 就是写三个函数 1.recordWinner(String winner), 2. printWinners() 按人名的字典序打印出之前winner的名字 + 累计赢的次数 3.printWinnerBoard() 按每个人累计赢的次数排名打印出每个人的姓名 + 赢的次数。也是瞟到过这道题，记得用treemap做，然而之前没有用过treemap不敢装逼，于是说用hashmap,要打印的时候把entryset sort一下打印出来。 大哥说it works,然后给我讲了treemap是什么，可以用起来，于是就就写了用treemap的代码，写了新出现的winner加入两个treemap的情况，跟大哥讨论了一下，已有的winner又出现的情况代码也差不多，本来大哥说写不完他可以拍照，好让LZ擦了白班继续写，结果跟他说了思路之后也没继续写。然后大哥来follow up 了一个是如果三个function都会被一秒内调用很多次，会有什么问题，LZ表示concurrency问题，要给getRecord加锁。大哥继续问若要加锁，那程序要等待，等待的模式是怎样的，LZ说调用record的时候如果俩print正在被调用，正在调用的继续完成，后面的print调用要等，等正在调用的结束以后，先做record,再继续做后面等着的print。大哥又问，如果record 10秒调用一次，print 1秒就要调用很多次，可以怎么优化呢。表示不用print里面每次都遍历treemap输出结果，因为只有record函数会修改数据，在两次record之间的数据是不会变的，于是可以加一个变量存一下目前结果（string）, record被调用完时修改一下string, print函数只要print这个string就可以。

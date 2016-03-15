@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Citadel/Cidetal.txt&apos; to &apos;Citadel.txt&apos;" description="Rename resource &apos;Cidetal.txt&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Cidetal.txt" name="Citadel.txt" stamp="1456018537097" updateReferences="true"/>
+</session>
