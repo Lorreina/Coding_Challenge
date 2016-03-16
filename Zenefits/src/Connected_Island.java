@@ -3,8 +3,9 @@ import java.util.ArrayList;
 public class Connected_Island {
 	public static ArrayList<Integer> countConnected(int[][] islands) {
 		ArrayList<Integer> result = new ArrayList<Integer> ();
-		if (islands == null || islands.length == 0 || islands[0] == null || islands[0].length == 0) 
+		if (islands == null || islands.length == 0 || islands[0] == null || islands[0].length == 0) { 
 			return result;
+		}
 		
 		for (int i = 0; i < islands.length; i++) {
 			for (int j = 0; j < islands[0].length; j++) {
