@@ -5,7 +5,7 @@
 4. 找到一个array的subarray，使subarray得sum=总sum的一半，我先用的backtracking和剪枝做的，问了下时间复杂度，然后时间不够了，dp的方法没想完全， 烙印提示用背包算法来做(subarray可以不连续)
 √5. leetcode原题group anagram, 问了时间复杂度，然后我是用sort+hashmap做的，followup问如果不用sort的话怎么做，对应的复杂度是多少
 6. 一个带权重的数组，根据权重随机去抽数组元素
-7. longest increasing path in a matrix， 不过此处相邻元素只能增1. 我先做了bfs search的方法，然后加了cache来优化。 问了复杂度。
+√7. longest increasing path in a matrix， 不过此处相邻元素只能增1. 我先做了bfs search的方法，然后加了cache来优化。 问了复杂度。
 8. combinatin of a string, length = k. 就是subset，只不过每个sub要求length = k。
 √9. valid BST。 原题。
 10. 给一个Node数组，让判断数组里所有的Node是不是在一颗binary tree上，如果是则返回root,如果不是（比如有环，比如分成了两颗树）返回null
@@ -25,7 +25,7 @@
 	返回第一个peak，O(n)的方法就行了
 20. http://www.1point3acres.com/bbs/thread-133338-1-1.html
 	√1) randomize inner word 2) Trie Data Structure
-21. http://www.1point3acres.com/bbs/thread-131422-1-1.html
+√21. http://www.1point3acres.com/bbs/thread-131422-1-1.html
 	Validate Special Binary Tree: input is node pairs to generate tree
 √22. http://www.1point3acres.com/bbs/thread-130278-1-1.html
 	String Match 同上面重复11题
@@ -46,9 +46,63 @@
 	一直调用next会返回1,5,6,2,4,7,3,8,9，先用了O(mn)的方法，m是最长的iterator的数组的长度，又改成queue或者cycle linkedlist，复杂度是O(k), k是总元素个数
 	Follow Up是，如果iterator有prev和hasPrev接口，实现Zigzag iterator的prev和hasPrev，用C++的deque和stack
 
+√26. Rotate an m*n matrix.  
+27. Regular Expression Matching  
+√28. N-Queens (OA question)
+29. Given an integer array, return the array that would come previously in lexographical order  
+√30. topology sort
+31. Given a positive integer n>1, find the list of all lists x such that elements of x are positive integers greater than 0 and less than n, and elements of x add up to n.
+	e.g. n=4
+	[[1,1,1,1], [1,1,2], [1,2,1], [2,1,1], [2,2], [1,3], [3,1]]
+	public List<List<Integer>> countPermutations(int n){}
+32. Build a queue with a constant number of stacks. (Just write down pseudocode)
+33. Given a class PStack with two inner stacks and the following features(pseudocode):
+	Class PStack{
+		stack s0, s1;
+		double p;
+		PStack(double p){
+			
+		}
+		head();//peek()
+		pop();//pop out element in s0 with probability p
+		          //or element in s1 with probability 1-p
+		size();
+		push(Object 0, int index);//push element onto s0 when index==0
+		                                        //push onto s1 when index==1
+	}
+		
+	Implement PQueue with similar behavior
+	class PQueue{
+		public PQueue(double p){
+		}
+		head();
+		poll();
+		size();
+		offer(Object o, int index);
+	
+	}
+√34. whether a binary tree is mirror(left.left == right.right)
+√35. how to produce random number 
+√36. If given a function that generates a random number from 1 to 5, how do you use this function to generate a random number from 1 to 7 with the same probability? (ie. function a has probability 1/5 per number, function b would have probability 1/7).   
+37. next palindrome number
+√38. print hierarchy (similar to employee and manger relations);
+√39. all possible path of an 2D grid (0 can reach, 1 cannot reach);
+40. given an initial budget to spend along the way, path that gives the smallest value >=0
+41. string permutations;
+42. Return lexicographical kth ordering (HHVV,HVHV where H   = horizontal, V - vertical) of minimum steps to reach from 0,0 coordinates in a grid to any given coordinates. Inputs are {[x1,y1,k1],[x2,y2,k2]...}The question itself ran easily 3 -4 paragraphs just to understand it one pass and I took 12 - 15 minutes of about 45 minutes interview to understand, I asked for a swap question because I didn't understand notation for kth order lexicographical what he really meant. When I said I may have to sort, then he said no need to sort. the swap question was to find maximized product of length of non overlapping palindrome subsequences ( note: not substring).
+43. Second question was to return lowest reduced fraction of summing of a bunch of numerator denominator combination input as strings. This requires to have knowledge of LCM or GCD and on top of it adding the fractions. I could code for 2nd question except for getting GCD, which point I left. I felt the interview was really difficult and not like any question I had seen on glassdoor. I can do comparison of the difficulty level since I have given interviews at other bay area companies where I have onsite interview calls too not anything close to this difficulty. May be these were hacker rank challenges online take come kind of stuff. 
+√44. flipping the bits. Given a binary string, return the maximum number of 1s you can get if you flip the bits.  
+45. Good nodes problem using Linkedlist
+√46. possible number of paths in a matrix of 1's and 0's  
+√47. The rank of string in all permutations   (OA Question)
+√48. Calculating expression reclusively  (OA Question)
+√49. Reverse a string (this is a string => string a is this)  
+50. Given a positive integer, find the smallest zero-one multiple.  
 
 
 设计：
 1. 一道设计题，假设客户和QA engineer之间不能直接交流，需要一个程序来将客户的需求相应forward到工程师那边，然后同样把比较技术性的回复转换成客户能理解的东西，如何设计中间程序，需要什么数据结构，要记录哪些东西，数据库怎么设计。 这题比较开放，瞎扯就行了
 2. 画了一张数据库的表，有id, firstname, lastname, studentid, graduate/undergraduate这些列，问LZ如果在studentid这列加index好吗，在graduate/undergraduta这列加index好吗，讨论完了以后说这只是warmup
 3. winner board, 就是写三个函数 1.recordWinner(String winner), 2. printWinners() 按人名的字典序打印出之前winner的名字 + 累计赢的次数 3.printWinnerBoard() 按每个人累计赢的次数排名打印出每个人的姓名 + 赢的次数。也是瞟到过这道题，记得用treemap做，然而之前没有用过treemap不敢装逼，于是说用hashmap,要打印的时候把entryset sort一下打印出来。 大哥说it works,然后给我讲了treemap是什么，可以用起来，于是就就写了用treemap的代码，写了新出现的winner加入两个treemap的情况，跟大哥讨论了一下，已有的winner又出现的情况代码也差不多，本来大哥说写不完他可以拍照，好让LZ擦了白班继续写，结果跟他说了思路之后也没继续写。然后大哥来follow up 了一个是如果三个function都会被一秒内调用很多次，会有什么问题，LZ表示concurrency问题，要给getRecord加锁。大哥继续问若要加锁，那程序要等待，等待的模式是怎样的，LZ说调用record的时候如果俩print正在被调用，正在调用的继续完成，后面的print调用要等，等正在调用的结束以后，先做record,再继续做后面等着的print。大哥又问，如果record 10秒调用一次，print 1秒就要调用很多次，可以怎么优化呢。表示不用print里面每次都遍历treemap输出结果，因为只有record函数会修改数据，在两次record之间的数据是不会变的，于是可以加一个变量存一下目前结果（string）, record被调用完时修改一下string, print函数只要print这个string就可以。
+4. How would you like to implement a Stackoverflow like system?  
+5. Shuffle card algorithm, where you have a deck of cards and you need to write a program to shuffle it.  
