@@ -84,7 +84,7 @@
 √34. whether a binary tree is mirror(left.left == right.right)
 √35. how to produce random number 
 √36. If given a function that generates a random number from 1 to 5, how do you use this function to generate a random number from 1 to 7 with the same probability? (ie. function a has probability 1/5 per number, function b would have probability 1/7).   
-37. next palindrome number
+√37. next palindrome number
 √38. print hierarchy (similar to employee and manger relations);
 √39. all possible path of an 2D grid (0 can reach, 1 cannot reach);
 40. given an initial budget to spend along the way, path that gives the smallest value >=0
