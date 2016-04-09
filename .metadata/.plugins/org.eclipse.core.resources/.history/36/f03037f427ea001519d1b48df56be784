@@ -1,6 +1,0 @@
-
-public class Find_Peak {
-	findPeakElement(int[] nums) {
-		
-	}
-}

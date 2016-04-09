@@ -1,7 +1,0 @@
-
-public class CacheSet {
-	private static CacheSet instance = null;
-	public static CacheSet getInstance() {
-		
-	}
-}

@@ -1,8 +1,0 @@
-
-public class Split_Odd_Even {
-	public void splitArray(int[] nums) {
-		
-		
-		
-	}
-}

@@ -1,6 +1,0 @@
-
-public class Randomize_Inner_Word {
-	public String randomize(String str) {
-		
-	}
-}

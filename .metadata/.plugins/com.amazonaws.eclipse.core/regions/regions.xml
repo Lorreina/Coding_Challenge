@@ -160,6 +160,7 @@
       <service name="CloudWatch">https://monitoring.eu-central-1.amazonaws.com/</service>
       <service name="DynamoDB">https://dynamodb.eu-central-1.amazonaws.com/</service>
       <service name="DynamoDBStream">https://streams.dynamodb.us-eu-central-1.amazonaws.com/</service>
+	  <service name="Lambda">https://lambda.eu-central-1.amazonaws.com/</service>
 	  <service name="Kinesis">https://kinesis.eu-central-1.amazonaws.com/</service>
 	  <service name="Logs">https://logs.eu-central-1.amazonaws.com/</service>	  	  
     </services>

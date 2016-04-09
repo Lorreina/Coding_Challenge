@@ -51,7 +51,7 @@ class DeepIterator implements Iterator {
         }
         
         while (listStack.peek().get(stack.peek()) instanceOf List) {
-            listStack.put(listStack.peek().get(stack.peek());
+            listStack.put(listStack.peek().get(stack.peek()));
             stack.push(0);
         }
         return true;

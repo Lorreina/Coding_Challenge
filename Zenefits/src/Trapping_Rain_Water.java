@@ -4,6 +4,7 @@
  * @author lorreina
  *
  */
+
 public class Trapping_Rain_Water {
 	public int trap(int[] height) {
         if (height == null || height.length < 3) {

@@ -1,8 +1,0 @@
-
-public class Boss_Employee {
-	public void printRelation(String[] boss, String[] employee) {
-		if (boss == null || boss.length == 0) {
-			return;
-		}
-	}
-}

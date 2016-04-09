@@ -1,0 +1,40 @@
+
+public class Flatten_Nested_List_Iterator {
+	public class NestedIterator implements Iterator<Integer> {
+	    private List<NestedInteger> nestedList;
+	    private Stack<NestedInteger> stack;
+	    private Stack<Integer> index;
+	    public NestedIterator(List<NestedInteger> nestedList) {
+	        this.nestedList = nestedList;
+	        this.stack.push(nestedList);
+	        this.index.push(0);
+	    }
+
+	    @Override
+	    public Integer next() {
+	        Integer result = stack.peek().get(index.peek());
+	        while(index.peek() == stack.peek().size() - 1) {
+	            index.pop();
+	            stack.pop();
+	        }
+	        index.push(index.pop() + 1);
+	        
+	        return result;
+	    }
+
+	    @Override
+	    public boolean hasNext() {
+	        if (stack.size() == 0) {
+	            return false;
+	        }
+	        if (index.peek() == stack.peek().size()) {
+	            return false;
+	        }
+	        while (stack.peek().get(index.peek()) instanceOf List) {
+	            stack.push(stack.peek().get(index.peek()));
+	            index.push(0);
+	        }
+	        return true;
+	    }
+	}
+}
