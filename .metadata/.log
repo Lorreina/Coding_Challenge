@@ -3000,3 +3000,1303 @@ java.io.IOException: Azure SDK is not installed.
 
 !ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-04-24 14:33:48.484
 !MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk3686847667668669969/sdk.zip, File-length: 171708946
+!SESSION 2016-05-04 16:14:49.832 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-05-04 16:14:59.791
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-05-04 16:15:01.179
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-05-04 16:15:01.253
+!MESSAGE AWS toolkit core plugin initialized after 1465 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-05-04 16:15:01.260
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-05-04 16:15:01.264
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-05-04 16:15:01.275
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-05-04 16:15:01.278
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-05-04 16:15:01.278
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.447
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.451
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.452
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.452
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.452
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.452
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.452
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.453
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.453
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.453
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.453
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.453
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.454
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.454
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.454
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.454
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-05-04 16:15:01.454
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-05-04 16:15:02.033
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk5754633316401398518/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-05-04 16:15:47.458
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk5754633316401398518/sdk.zip, File-length: 172260355
+!SESSION 2016-06-18 21:47:27.485 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-19 17:20:12.654
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-19 17:20:14.291
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-19 17:20:14.399
+!MESSAGE AWS toolkit core plugin initialized after 1747 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-19 17:20:14.407
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-06-19 17:20:14.419
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-06-19 17:20:14.436
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-06-19 17:20:14.439
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-06-19 17:20:14.439
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.661
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.665
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.666
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.666
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.666
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.666
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.667
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.667
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.667
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.667
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.667
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.667
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.668
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.668
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.668
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.668
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-19 17:20:14.668
+!MESSAGE ZenefitsisNaturefalse
+!SESSION 2016-06-30 23:05:43.478 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-30 23:05:56.083
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-30 23:05:58.383
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-30 23:05:58.443
+!MESSAGE AWS toolkit core plugin initialized after 2363 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-06-30 23:05:58.450
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-06-30 23:05:58.454
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-06-30 23:05:58.463
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-06-30 23:05:58.465
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-06-30 23:05:58.465
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.634
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.640
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.640
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.640
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.640
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.640
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.640
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.641
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.642
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.642
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-06-30 23:05:58.642
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-06-30 23:05:59.661
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk568484155914138755/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-06-30 23:06:49.529
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk568484155914138755/sdk.zip, File-length: 187872143
+!SESSION 2016-07-19 20:19:12.381 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-19 20:19:22.343
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-19 20:19:23.987
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-19 20:19:24.042
+!MESSAGE AWS toolkit core plugin initialized after 1700 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-19 20:19:24.048
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-07-19 20:19:24.053
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-07-19 20:19:24.063
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-07-19 20:19:24.065
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-07-19 20:19:24.065
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.210
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.214
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.215
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.215
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.215
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.215
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.215
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.216
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.216
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.216
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.216
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.216
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.217
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.217
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.217
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.217
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-19 20:19:24.217
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-07-19 20:35:38.896
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7429948114138913468/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-07-19 20:36:33.254
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7429948114138913468/sdk.zip, File-length: 193122919
+!SESSION 2016-07-26 20:58:26.676 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-26 20:58:42.174
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 4 0 2016-07-26 20:58:45.221
+!MESSAGE Failed to cache regions file
+!STACK 0
+com.amazonaws.AmazonClientException: Unable to execute HTTP request: aws-vs-toolkit.s3.amazonaws.com
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:500)
+	at com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:310)
+	at com.amazonaws.services.s3.AmazonS3Client.invoke(AmazonS3Client.java:3604)
+	at com.amazonaws.services.s3.AmazonS3Client.headBucket(AmazonS3Client.java:1050)
+	at com.amazonaws.services.s3.AmazonS3Client.getBucketRegionViaHeadRequest(AmazonS3Client.java:4005)
+	at com.amazonaws.services.s3.AmazonS3Client.fetchRegionFromCache(AmazonS3Client.java:3985)
+	at com.amazonaws.services.s3.AmazonS3Client.resolveServiceEndpoint(AmazonS3Client.java:3960)
+	at com.amazonaws.services.s3.AmazonS3Client.getObjectMetadata(AmazonS3Client.java:992)
+	at com.amazonaws.services.s3.AmazonS3Client.getObjectMetadata(AmazonS3Client.java:977)
+	at com.amazonaws.eclipse.core.regions.RegionUtils.cacheRegionsFile(RegionUtils.java:290)
+	at com.amazonaws.eclipse.core.regions.RegionUtils.init(RegionUtils.java:235)
+	at com.amazonaws.eclipse.core.AwsToolkitCore.doFullInit(AwsToolkitCore.java:422)
+	at com.amazonaws.eclipse.core.AwsToolkitCore.start(AwsToolkitCore.java:371)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:293)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:52)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:288)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.getExecutableExtension(EarlyStartupRunnable.java:120)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.net.UnknownHostException: aws-vs-toolkit.s3.amazonaws.com
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1259)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:259)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:304)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:611)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:446)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:863)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at com.amazonaws.http.AmazonHttpClient.executeOneRequest(AmazonHttpClient.java:728)
+	at com.amazonaws.http.AmazonHttpClient.executeHelper(AmazonHttpClient.java:489)
+	... 44 more
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-26 20:58:45.268
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-26 20:58:45.417
+!MESSAGE AWS toolkit core plugin initialized after 3245 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-07-26 20:58:45.424
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-07-26 20:58:45.450
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-07-26 20:58:45.464
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-07-26 20:58:45.466
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-07-26 20:58:45.467
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.614
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.617
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.618
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.619
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.619
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.619
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.619
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.619
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.619
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.620
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-07-26 20:58:45.620
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 23 2016-07-26 20:58:56.061
+!MESSAGE The server availability check failed Version: 1.0.0.v20150617-0732
+!STACK 0
+java.net.UnknownHostException: dev.eclipse.org: unknown error
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:907)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1302)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1255)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1171)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1105)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-07-26 21:55:45.213
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7533067322349994658/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-07-26 21:56:36.424
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7533067322349994658/sdk.zip, File-length: 193815596
+!SESSION 2016-08-01 20:09:29.424 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-01 20:09:39.329
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-01 20:09:41.112
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-01 20:09:41.174
+!MESSAGE AWS toolkit core plugin initialized after 1846 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-01 20:09:41.180
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-01 20:09:41.187
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-01 20:09:41.197
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-01 20:09:41.199
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-01 20:09:41.199
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.349
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.353
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.353
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.353
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.353
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.353
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.353
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.354
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.354
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.354
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.354
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.354
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.354
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.355
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.355
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.355
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-01 20:09:41.355
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-01 20:09:42.565
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk5049913204140123454/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-01 20:10:34.223
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk5049913204140123454/sdk.zip, File-length: 194440040
+!SESSION 2016-08-06 08:23:49.401 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-06 08:23:58.173
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-06 08:23:59.311
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-06 08:23:59.544
+!MESSAGE AWS toolkit core plugin initialized after 1377 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-06 08:23:59.559
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-06 08:23:59.563
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-06 08:23:59.579
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-06 08:23:59.582
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-06 08:23:59.582
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.722
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.727
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.728
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.728
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.728
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.729
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.730
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.730
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.730
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.730
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.731
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.731
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.731
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.731
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.731
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.731
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-06 08:23:59.732
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-06 08:24:13.724
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk2429740770442267620/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-06 08:27:24.681
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk2429740770442267620/sdk.zip, File-length: 194924919
+!SESSION 2016-08-22 14:23:57.377 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 14:24:06.431
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 14:24:07.929
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 14:24:07.993
+!MESSAGE AWS toolkit core plugin initialized after 1565 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 14:24:07.999
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-22 14:24:08.005
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-22 14:24:08.016
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-22 14:24:08.018
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-22 14:24:08.018
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.157
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.161
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.161
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.161
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.161
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.162
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.162
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.162
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.162
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.162
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.162
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.163
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.163
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.163
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.163
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.163
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 14:24:08.163
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-22 14:24:19.090
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-08-22 14:25:09.782
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-22 14:25:09.784
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-22 14:27:07.055
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7080047062481509250/sdk.zip
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-22 14:28:01.093
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7080047062481509250/sdk.zip, File-length: 204870288
+
+!ENTRY org.eclipse.jdt.debug.ui 4 4 2016-08-22 14:33:09.632
+!MESSAGE org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 2173. occurred retrieving fields of declaring type.
+!STACK 0
+org.eclipse.jdi.TimeoutException: Timeout occurred while waiting for packet 2173.
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:187)
+	at org.eclipse.jdi.internal.connect.PacketReceiveManager.getReply(PacketReceiveManager.java:198)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:192)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:227)
+	at org.eclipse.jdi.internal.MirrorImpl.requestVM(MirrorImpl.java:259)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.fields(ReferenceTypeImpl.java:920)
+	at org.eclipse.jdi.internal.ReferenceTypeImpl.allFields(ReferenceTypeImpl.java:764)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getVariables0(JDIStackFrame.java:312)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.getVariables(JDIStackFrame.java:286)
+	at org.eclipse.jdt.internal.debug.core.model.JDIStackFrame.findVariable(JDIStackFrame.java:719)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.findLocalVariable(JavaDebugHover.java:142)
+	at org.eclipse.jdt.internal.debug.ui.JavaDebugHover.getHoverInfo2(JavaDebugHover.java:428)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:129)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:85)
+	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:166)
+!SESSION 2016-08-22 19:54:17.015 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 19:54:24.209
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 19:54:25.314
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 19:54:25.388
+!MESSAGE AWS toolkit core plugin initialized after 1182 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-22 19:54:25.395
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-22 19:54:25.401
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-22 19:54:25.411
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-22 19:54:25.414
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-22 19:54:25.414
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.590
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.594
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.594
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.595
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.595
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.595
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.595
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.595
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.595
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-22 19:54:25.596
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-22 19:54:36.818
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-08-22 19:55:26.264
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-22 19:55:26.265
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2016-08-28 16:50:26.662 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-28 16:51:13.580
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-28 16:51:15.032
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-28 16:51:15.112
+!MESSAGE AWS toolkit core plugin initialized after 1534 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-28 16:51:15.118
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-28 16:51:15.130
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-28 16:51:15.138
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-28 16:51:15.140
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-28 16:51:15.140
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.350
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.371
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.374
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.374
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.374
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.374
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.374
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.375
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.375
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.375
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.375
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.377
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.377
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.377
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.378
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.378
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-28 16:51:15.379
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-28 16:51:23.579
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk4829642502374555067/sdk.zip
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-28 16:51:26.246
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-08-28 16:52:16.028
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-28 16:52:16.029
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-08-28 16:52:17.104
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk4829642502374555067/sdk.zip, File-length: 204916736
+!SESSION 2016-08-29 14:56:29.640 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-29 15:40:09.407
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-29 15:40:10.852
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-29 15:40:10.946
+!MESSAGE AWS toolkit core plugin initialized after 1543 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-29 15:40:10.952
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-29 15:40:10.960
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-29 15:40:10.969
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-29 15:40:10.971
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-29 15:40:10.971
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.109
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.115
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.116
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.116
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.116
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.116
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.116
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.117
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.117
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.117
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.117
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.117
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.117
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.118
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.118
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.118
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-29 15:40:11.118
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-29 15:40:22.071
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-08-29 15:41:11.858
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-29 15:41:11.860
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732

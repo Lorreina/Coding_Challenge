@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="dis[0]"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="dps"/>\n<expression enabled\="true" text\="dps.get(0)"/>\n<expression enabled\="true" text\="dps.size()"/>\n<expression enabled\="true" text\="dps.get(j)"/>\n<expression enabled\="true" text\="j"/>\n<expression enabled\="true" text\="i"/>\n<expression enabled\="true" text\="sentence"/>\n<expression enabled\="true" text\="dps"/>\n<expression enabled\="true" text\="dps.get(dp.length - 1)"/>\n</watchExpressions>\n
