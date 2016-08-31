@@ -189,7 +189,6 @@
       <service name="DynamoDBStream">https://streams.dynamodb.ap-south-1.amazonaws.com/</service>
     <service name="Kinesis">https://kinesis.ap-south-1.amazonaws.com/</service>
     <service name="Logs">https://logs.ap-south-1.amazonaws.com/</service>     
-    <service name="Lambda">https://lambda.ap-southeast-2.amazonaws.com/</service>  
     </services>
   </region>
   <region>
@@ -272,7 +271,8 @@
       <service name="DynamoDB">https://dynamodb.ap-northeast-2.amazonaws.com/</service>
       <service name="DynamoDBStream">https://streams.dynamodb.ap-northeast-2.amazonaws.com/</service>
       <service name="Kinesis">https://kinesis.ap-northeast-2.amazonaws.com/</service>
-      <service name="Logs">https://logs.ap-northeast-2.amazonaws.com/</service>       
+      <service name="Logs">https://logs.ap-northeast-2.amazonaws.com/</service>     
+      <service name="Lambda">https://lambda.ap-northeast-2.amazonaws.com/</service>	  
     </services>
   </region>
 
