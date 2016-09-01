@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="last"/>\n<expression enabled\="true" text\="res"/>\n<expression enabled\="true" text\="curr"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="s"/>\n<expression enabled\="true" text\="k"/>\n<expression enabled\="true" text\="maxLen"/>\n</watchExpressions>\n
