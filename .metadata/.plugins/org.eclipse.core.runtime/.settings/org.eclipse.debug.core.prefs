@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="arr"/>\n<expression enabled\="true" text\="arr.length"/>\n<expression enabled\="true" text\="paths[i]"/>\n<expression enabled\="true" text\="paths[i] \=\= &quot;&quot;"/>\n<expression enabled\="true" text\="paths[i].equals(&quot;&quot;)"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="last"/>\n<expression enabled\="true" text\="res"/>\n<expression enabled\="true" text\="curr"/>\n</watchExpressions>\n

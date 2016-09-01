@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * LeetCode
+ * 
+ * @author lorreina
+ *
+ */
+public class Pascals_Triangle_II {
+    public static List<Integer> getRow(int rowIndex) {
+        List<Integer> res = new ArrayList<Integer> ();
+        res.add(1);
+        if (rowIndex == 0) {
+            return res;
+        }
+        res.add(1);
+        if (rowIndex == 0) {
+            return res;
+        }
+        List<Integer> last = new ArrayList<Integer> (res);
+        List<Integer> tmp = new ArrayList<Integer> ();
+        for (int i = 2; i <= rowIndex; i++) {
+            for (int j = 1; j < i; j++) {
+                res.set(j, last.get(j - 1) + last.get(j));
+            }
+            res.add(1);
+            tmp = last;
+            last = res;
+            res = tmp;
+        }
+        
+        return last;
+    }
+    
+    public static void main(String[] args) {
+    	List<Integer> res = getRow(3);
+    	for (int i = 0; i < res.size(); i++) {
+    		System.out.print(res.get(i));
+    		System.out.print(" ");
+    	}
+    }
+}	

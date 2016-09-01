@@ -4417,3 +4417,237 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-30 22:10:24.324
 !MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2016-08-31 12:53:00.551 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -data /Users/lorreina/Documents/workspace/Coding Challenge -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 12:53:07.488
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 12:53:08.297
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 12:53:08.504
+!MESSAGE AWS toolkit core plugin initialized after 1021 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 12:53:08.512
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-31 12:53:08.516
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-31 12:53:08.526
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-31 12:53:08.529
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-31 12:53:08.530
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.669
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.675
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.675
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.675
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.675
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.679
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.679
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.679
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.680
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.680
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.680
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.680
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.680
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.681
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.681
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.681
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 12:53:08.682
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-31 12:53:20.210
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-08-31 12:54:09.289
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-31 12:54:09.290
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2016-08-31 20:20:43.223 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 20:20:54.923
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 20:20:56.290
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 20:20:56.352
+!MESSAGE AWS toolkit core plugin initialized after 1436 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-08-31 20:20:56.360
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-08-31 20:20:56.365
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-08-31 20:20:56.375
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-08-31 20:20:56.377
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-08-31 20:20:56.378
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.513
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.518
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.518
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.518
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.519
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.520
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.520
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.520
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.520
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.520
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-08-31 20:20:56.520
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-08-31 20:21:07.626
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-08-31 20:21:57.120
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-08-31 20:21:57.121
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
