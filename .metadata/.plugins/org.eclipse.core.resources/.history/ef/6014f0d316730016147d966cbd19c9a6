@@ -1,0 +1,88 @@
+/**
+ * LeetCode
+ * 267. Palindrome Permutation II
+ * @author lorreina
+ *
+ */
+public class Palindrome_Permutation_II {
+    public List<String> generatePalindromes(String s) {
+        List<String> result = new ArrayList<String> ();
+        if (s == null || s.length() == 0) {
+            return result;
+        }
+        
+        List<StringBuilder> res = new ArrayList<StringBuilder> ();
+        char[] ch = new char[256];
+        boolean hasMiddle = false;
+        String middle = "";
+        
+        for (char c : s.toCharArray()) {
+            ch[(int) c]++;
+        }
+        
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < ch.length; i++) {
+            if (ch[i] % 2 == 1) {
+                if (hasMiddle) {
+                    return result;
+                } else {
+                    hasMiddle = true;
+                    middle = String.valueOf((char) i);
+                }
+                ch[i]--;
+            }
+            
+            for (int j = 0; j < ch[i]; j = j + 2) {
+                sb.append((char) i);
+            }
+        }
+        
+        char[] half = new char[sb.length()];
+        sb.getChars(0, sb.length(), half, 0);
+        boolean[] used = new boolean[sb.length()];
+        
+        dfs(res, new StringBuilder(), used, half);
+        
+        if (hasMiddle) {
+            for (int i = 0; i < res.size(); i++) {
+                String permutation = res.get(i).toString() + middle + res.get(i).reverse().toString();
+                result.add(permutation);
+            }
+        } else {
+            for (int i = 0; i < res.size(); i++) {
+                String permutation = res.get(i).toString() + res.get(i).reverse().toString();
+                result.add(permutation);
+            }
+        }
+        
+        return result;
+    }
+    
+    private void dfs(List<StringBuilder> res, StringBuilder sb, boolean[] used, char[] half) {
+        if (sb.length() == half.length) {
+            res.add(sb);
+            return;
+        }
+        
+        char last = half[0];
+        boolean isFirst = true;
+        for (int i = 0; i < half.length; i++) {
+            if (used[i]) {
+                continue;
+            }
+            
+            if (!isFirst && half[i] == last) {
+                continue;
+            }
+            
+            isFirst = false;
+            last = half[i];
+            sb.append(half[i]);
+            used[i] = true;
+            dfs(res, sb, used, half);
+            used[i] = false;
+            sb.deleteCharAt(sb.length() - 1);
+        }
+        return;
+    }
+}
