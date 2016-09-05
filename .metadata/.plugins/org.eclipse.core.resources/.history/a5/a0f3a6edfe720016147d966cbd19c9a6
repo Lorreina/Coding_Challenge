@@ -1,0 +1,58 @@
+import Balanced_Binary_Tree.TreeNode;
+
+/**
+ * LeetCode
+ * 250. Count Univalue Subtrees
+ * @author lorreina
+ *
+ */
+public class Count_Univalue_Subtrees {
+    int count;
+    public int countUnivalSubtrees(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        this.count = 0;
+        if (isUnivalSubtree(root)){
+            this.count++;
+        };
+        return this.count;
+    }
+    
+    private boolean isUnivalSubtree(TreeNode root) {
+        if (root.left == null || root.right == null) {
+            this.count++;
+            return true;
+        } else if (root.left == null) {
+            if (isUnivalSubtree(root.right)) {
+                if (root.val == root.right.val) {
+                    this.count++;
+                    return true;
+                }
+            }
+        } else if (root.right == null) {
+            if (isUnivalSubtree(root.left)) {
+                if (root.val == root.left.val) {
+                    this.count++;
+                    return true;
+                }
+            }
+        } else {
+            if (isUnivalSubtree(root.left) && isUnivalSubtree(root.right)) {
+                if (root.val == root.right.val && root.val == root.left.val) {
+                    this.count++;
+                    return true;
+                }
+            }
+        }
+        
+        return false;
+    }
+    
+    public class TreeNode {
+		int val;
+		TreeNode left;
+		TreeNode right;
+		TreeNode(int x) { val = x; }
+	}
+}
