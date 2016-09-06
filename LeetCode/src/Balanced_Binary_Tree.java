@@ -42,6 +42,7 @@ public class Balanced_Binary_Tree {
 		TreeNode right;
 		TreeNode(int x) { val = x; }
 	}
+
 }
 
 /**

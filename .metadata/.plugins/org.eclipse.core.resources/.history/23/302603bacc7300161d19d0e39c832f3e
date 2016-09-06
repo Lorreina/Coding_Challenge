@@ -1,0 +1,58 @@
+import java.util.HashSet;
+
+/**
+ * LeetCode
+ * 294. Flip Game II 
+ * @author lorreina
+ *
+ */
+public class Flip_Game_II {
+    HashSet<String> set;
+    public boolean canWin(String s) {
+        set = new HashSet<String> ();
+        if (s == null || s.length() <= 1 ) {
+            return false;
+        }
+        
+        char[] ch = s.toCharArray();
+        return helper(ch, true);
+    }
+    
+    private boolean helper (char[] ch, boolean isFirst) {
+        if (set.contains(String.valueOf(ch))) {
+            return false;
+        }
+        set.add(String.valueOf(ch));
+        
+        boolean res = true;
+//        boolean isLast = true;
+        for (int i = 1; i < ch.length; i++) {
+            if (ch[i - 1] == ch[i] && ch[i] == '+') {
+//            	isLast = false;
+                ch[i - 1] = '-';
+                ch[i] = '-';
+                res = (res || helper(ch, !isFirst));
+                res = res && helper(ch, !isFirst);
+                ch[i - 1] = '+';
+                ch[i] = '+';
+            }
+        }
+        
+//        if (isLast) {
+//        	if (isFirst) {
+//                return res;
+//            } else {
+//                return !res;
+//            }
+//        } else {
+//        	return res;
+//        }
+        return !res;
+    }
+    
+    public static void main(String[] args) {
+    	Flip_Game_II tmp = new Flip_Game_II();
+    	String s = "+++++++++";
+    	System.out.println(tmp.canWin(s));
+    }
+}
