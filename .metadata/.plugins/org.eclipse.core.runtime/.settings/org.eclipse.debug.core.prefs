@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="index"/>\n<expression enabled\="true" text\="minNum"/>\n<expression enabled\="true" text\="res"/>\n<expression enabled\="true" text\="minJ"/>\n<expression enabled\="true" text\="i"/>\n<expression enabled\="true" text\="list"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="start"/>\n<expression enabled\="true" text\="right"/>\n<expression enabled\="true" text\="res"/>\n<expression enabled\="true" text\="ch[start]"/>\n</watchExpressions>\n
