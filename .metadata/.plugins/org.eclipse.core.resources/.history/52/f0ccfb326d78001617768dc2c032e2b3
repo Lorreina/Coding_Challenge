@@ -1,0 +1,34 @@
+/**
+ * 397. Integer Replacement
+ * @author lorreina
+ *
+ */
+public class Integer_Replacement {
+    public int integerReplacement(int n) {
+        int count = 0;
+        while (n > 1) {
+            count += 1;
+            if (n & 1 == 0) {
+                n = n >> 1;
+            } else {
+                int flag = 4;
+                while (flag & n != 0) {
+                    flag = flag << 1;
+                }
+                if (flag == n + 1) {
+                    n = flag;
+                } else {
+                    n = n - 1;
+                }
+            }
+        }
+        
+        return count;
+    }
+    
+    public static void main(String[] args) {
+    	Integer_Replacement tmp = new Integer_Replacement();
+    	
+    }
+    
+}

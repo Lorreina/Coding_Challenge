@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="min"/>\n<expression enabled\="true" text\="min2"/>\n<expression enabled\="true" text\="color[0][min]"/>\n<expression enabled\="true" text\="color[0][min2]"/>\n<expression enabled\="true" text\="color[i][j]"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="map"/>\n<expression enabled\="true" text\="query[i]"/>\n<expression enabled\="true" text\="a"/>\n<expression enabled\="true" text\="b"/>\n<expression enabled\="true" text\="s"/>\n</watchExpressions>\n

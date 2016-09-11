@@ -1,0 +1,71 @@
+/**
+ * LeetCode
+ * 10. Regular Expression Matching
+ * @author lorreina
+ *
+ */
+public class Regular_Expression_Matching {
+	public boolean isMatch(String s, String p) {
+        if (s == null || s.length() == 0) {
+            return true;
+        }
+        
+        if (p == null || p.length() == 0) {
+            return false;
+        }
+        
+        char[] parray = p.toCharArray();
+        char[] sarray = s.toCharArray();
+        for (int i = 0; i < parray.length; i++) {
+            if (parray[i] == sarray[0] || parray[i] == '.') {
+                if (helper(sarray, parray, i)) {
+                    return true;
+                }
+            }
+        }
+        
+        return false;
+    }
+    
+    public boolean helper(char[] s, char[] p, int start) {
+        int last = start;
+        int j = start;
+        int i = 0;
+        while (i < s.length && j < p.length) {
+            if (p[j] == '*') {
+                if (p[last] == s[i] || p[last] == '.') {
+                    i++;
+                } else {
+                    j++;
+                }
+            } else {
+                // update last
+                last = j;
+                
+                if (s[i] == p[j] || p[j] == '.') {
+                    i++;
+                    j++;
+                } else {
+                	if (j + 1 < p.length && p[j + 1] == '*') {
+                        j = j + 2;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+        
+        if (i < s.length) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+    
+    public static void main(String[] args) {
+    	String p = ".*c";
+    	String s = "ab";
+    	Regular_Expression_Matching tmp = new Regular_Expression_Matching();
+    	System.out.println(tmp.isMatch(s, p));
+    }
+}
