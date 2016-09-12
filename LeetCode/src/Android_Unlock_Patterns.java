@@ -84,6 +84,9 @@ public class Android_Unlock_Patterns {
     public static void main(String[] args) {
     	Android_Unlock_Patterns tmp = new Android_Unlock_Patterns();
     	int m = 1, n = 3;
-    	System.out.println(tmp.numberOfPatterns(m, n));
+//    	System.out.println(tmp.numberOfPatterns(m, n));
+    	int x = 3 / -5;
+    	System.out.println(x);
+    	
     }
 }

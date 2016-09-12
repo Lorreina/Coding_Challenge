@@ -1,0 +1,45 @@
+/**
+ * LeetCode
+ * 29. Divide Two Integers
+ * @author lorreina
+ *
+ */
+public class Divide_Two_Integers {
+    public int divide(int dividend, int divisor) {
+        if (divisor == 0) {
+            return Integer.MAX_VALUE;
+        }
+        
+        if (dividend == 0) {
+            return 0;
+        }
+        
+        boolean isNegative = false;
+        if (dividend < 0) {
+            dividend = -dividend;
+            isNegative = !isNegative;
+        }
+        
+        if (divisor < 0) {
+            divisor = - divisor;
+            isNegative = !isNegative;
+        }
+        
+        
+    }
+    
+    public int helper(int dividend, int divisor) {
+        if (dividend == 0) {
+            return 0;
+        }
+        
+        int sum = 0;
+        int count = 0;
+        while (sum < dividend) {
+            count += 1;
+            sum += divisor;
+        }
+        
+        return count + helper(dividend - sum, divisor);
+    }
+}

@@ -1,0 +1,50 @@
+/**
+ * LeetCode
+ * 45. Jump Game II
+ * @author lorreina
+ *
+ */
+public class Jump_Game_II {
+	public int jump(int[] nums) {
+        if (nums.length == 1) {
+            return 0;
+        }
+        
+        int[] steps = new int[nums.length];
+        
+        int far = 0;
+        int n = nums.length - 1;
+        
+        if (nums[0] >= n) {
+            return 1;
+        } else {
+            for (int i = 1; i <= nums[0]; i++) {
+                steps[i] = 1;
+            }
+        }
+        
+        for (int i = 1; i < nums.length; i++) {
+            if (steps[i] == 0) {
+                steps[i] = steps[i - 1] + 1;
+            }
+            far = i + nums[i];
+            if (far >= n) {
+                return 1 + steps[i];
+            } else {
+                if (steps[far] == 0) {
+                    steps[far] = 1 + steps[i];
+                } else {
+                    steps[far] = Math.min(steps[far], 1 + steps[i]);
+                }
+            }
+        }
+        
+        return steps[n];
+    }
+	
+	public static void main(String[] args) {
+		int[] nums = {1, 2, 1, 4, 5};
+		Jump_Game_II tmp = new Jump_Game_II();
+		System.out.println(tmp.jump(nums));
+	}
+}

@@ -65,6 +65,9 @@ public class Regular_Expression_Matching {
     	String p = "ab*";
     	String s = "a";
     	Regular_Expression_Matching tmp = new Regular_Expression_Matching();
-    	System.out.println(tmp.isMatch(s, p));
+//    	System.out.println(tmp.isMatch(s, p));
+    	String str = "*ab*";
+    	String[] arr = str.split("\\*");
+    	int a = 1;
     }
 }

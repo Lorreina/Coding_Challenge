@@ -1,0 +1,89 @@
+/**
+ * LeetCode
+ * 44. Wildcard Matching
+ * @author lorreina
+ *
+ */
+public class Wildcard_Matching {
+	public boolean isMatch(String s, String p) {
+        if (s == null && p == null) {
+            return true;
+        }
+        
+        if (p == null || s == null) {
+            return false;
+        }
+        
+        char[] parray = p.toCharArray();
+        char[] sarray = s.toCharArray();
+        
+        return helper(sarray, parray);
+    }
+    
+    public boolean helper(char[] s, char[] p) {
+        int i = 0; 
+        int j = 0;
+        while (i < s.length && j < p.length) {
+            if (s[i] == p[j] || p[j] == '?') {
+                i++;
+                j++;
+            } else if (p[j] == '*') {
+                break;
+            } else {
+                return false;
+            }
+        }
+        
+        if (j == p.length) {
+            if (i == s.length) {
+                return true;
+            } else {
+                return false;
+            }
+        } else if (p[j] != '*') {
+           return false; 
+        }
+        
+        int m = s.length - 1;
+        int n = p.length - 1;
+        while (m >= i && n >= j) {
+            if (s[m] == p[n] || p[n] == '?') {
+                m--;
+                n--;
+            } else if (p[n] == '*') {
+                break;
+            } else {
+                return false;
+            }
+        }
+        
+        while (j <= n && s <= m) {
+            if (p[j] == '*') {
+                j++;
+            } else {
+                if (s[i] == p[j]) {
+                    i++;
+                    j++;
+                } else {
+                    i++;
+                }
+            }
+        }
+        
+        if (j == n + 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    
+    public static void main(String[] args) {
+//    	String p = "aasdf.*asdf.*asdf.*asdf.*s";
+//    	String s = "aasdfasdfasdfasdfas";
+    	String p = "a*******b";
+    	String s = "aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba";
+    	
+    	Wildcard_Matching tmp = new Wildcard_Matching();
+    	System.out.println(tmp.isMatch(s, p));
+    }
+}
