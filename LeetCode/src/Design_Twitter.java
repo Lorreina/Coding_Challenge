@@ -12,6 +12,7 @@ import java.util.PriorityQueue;
  *
  */
 public class Design_Twitter {
+	
 	public static class Twitter {
 	    HashMap<Integer, ArrayList<Integer>> tweetMap;
 	    HashMap<Integer, LinkedHashSet<Integer>> followMap;
@@ -115,6 +116,7 @@ public class Design_Twitter {
 	        }
 	    }
 	}
+	
 
 	/**
 	 * Your Twitter object will be instantiated and called as such:

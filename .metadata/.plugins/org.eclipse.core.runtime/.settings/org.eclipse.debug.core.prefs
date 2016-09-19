@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="stack"/>\n<expression enabled\="true" text\="index"/>\n<expression enabled\="true" text\="area"/>\n<expression enabled\="true" text\="heights[index]"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="i"/>\n<expression enabled\="true" text\="j"/>\n<expression enabled\="true" text\="board[i][j]"/>\n<expression enabled\="true" text\="k"/>\n<expression enabled\="true" text\="p"/>\n<expression enabled\="true" text\="set"/>\n</watchExpressions>\n
