@@ -24,7 +24,7 @@ public class Frog_Jump {
         
         for (int i = 1; i < stones.length; i++) {
             LinkedHashSet<Integer> set = map.get(stones[i]);
-            Iterator itr = set.iterator();
+            Iterator<Integer> itr = set.iterator();
             while (itr.hasNext()) {
                 int step = (int)itr.next();
                 for (int j = step - 1; j <= step + 1; j++) {

@@ -1,5 +1,9 @@
-import java.util.HashMap;
-
+/**
+ * LeetCode
+ * 4. Median of Two Sorted Arrays
+ * @author lorreina
+ *
+ */
 public class Median_of_two_sorted_arrays {
 	public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int length = nums1.length + nums2.length;

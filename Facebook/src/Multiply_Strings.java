@@ -38,4 +38,11 @@ public class Multiply_Strings {
         }
         return res.toString();
     }
+	
+	public static void main(String[] args) {
+		Multiply_Strings tmp = new Multiply_Strings();
+		String num1 = "123";
+		String num2 = "456";
+		System.out.println(tmp.multiply(num1, num2));
+	}
 }

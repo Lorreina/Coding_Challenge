@@ -44,7 +44,7 @@ public class Find_the_Celebrity {
                 }
             }
             
-            //check if celebeity doesn't i
+            //check if celebeity doesn't know i
             if (i != dontknow) {
                 if (knows(celebrity, i)) {
                     return -1;

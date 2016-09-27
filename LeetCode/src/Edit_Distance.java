@@ -30,4 +30,10 @@ public class Edit_Distance {
         
         return matrix[word1.length()][word2.length()];
     }
+    
+    public static void main(String[] args) {
+    	String s = "a";
+    	String t = "A";
+    	System.out.println(s.substring(1).equals(t.substring(1)));
+    }
 }

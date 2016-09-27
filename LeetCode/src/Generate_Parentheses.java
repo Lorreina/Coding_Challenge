@@ -11,29 +11,29 @@ public class Generate_Parentheses {
 	public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<String> ();
     
-        helper(res, n, new StringBuilder(), 0);
+        helper(res, n, n, new StringBuilder());
         
         return res;
     }
     
-    private void helper(List<String> res, int n, StringBuilder s, int index) {
-        
-        if (index == s.length()) {
-            s.append("()");
-        } else {
-            s.insert(index, "()");
+    private void helper(List<String> res, int left, int right, StringBuilder s) {
+        if (left == 0) {
+            StringBuilder str = new StringBuilder(s);
+            for (int i = 0; i < right; i++) {
+                str.append(")");
+            }
+            res.add(str.toString());
+        } else if (left <= right) {
+            s.append("(");
+            helper(res, left - 1, right, s);
+            s.deleteCharAt(s.length() - 1);
+            
+            if (left < right) {
+                s.append(")");
+                helper(res, left, right - 1, s);
+                s.deleteCharAt(s.length() - 1);
+            }
         }
-        
-        if (n == 1) {
-        	res.add(s.toString());
-        } else {
-            helper(res, n - 1, s, index + 1); 
-	        helper(res, n - 1, s, index + 2);
-	        if (index + 2 != s.length()) {
-	        	helper(res, n - 1, s, s.length());
-	        }
-        }
-        s.delete(index, index + 2);
         
         return;
     }

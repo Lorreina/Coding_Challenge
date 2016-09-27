@@ -31,9 +31,31 @@ public class Group_Shifted_Strings {
         return res;
     }
     
+//    private String shift(String s) {
+//        if (s == null || s.length() == 0) {
+//            return s;
+//        }
+//        
+//        char[] ch = s.toCharArray();
+//        int step = ch[0] - 'a';
+//        if (step == 0) {
+//            return s;
+//        }
+//        
+//        for (int i = 0; i < ch.length; i++) {
+//            int diff = ch[i] - 'a';
+//            if (diff < step) {
+//                ch[i] = (char) ('z' - (step - diff - 1));
+//            } else {
+//                ch[i] -= step;
+//            }
+//        }
+//        
+//        return String.valueOf(ch);
+//    }
     private String shift(String s) {
-        if (s == null || s.length() == 0) {
-            return s;
+        if (s.length() == 0) {
+            return "";
         }
         
         char[] ch = s.toCharArray();
@@ -41,14 +63,8 @@ public class Group_Shifted_Strings {
         if (step == 0) {
             return s;
         }
-        
         for (int i = 0; i < ch.length; i++) {
-            int diff = ch[i] - 'a';
-            if (diff < step) {
-                ch[i] = (char) ('z' - (step - diff - 1));
-            } else {
-                ch[i] -= step;
-            }
+        	ch[i] = (char) ('a' + ((ch[i] - 'a') - step + 26) % 26);
         }
         
         return String.valueOf(ch);

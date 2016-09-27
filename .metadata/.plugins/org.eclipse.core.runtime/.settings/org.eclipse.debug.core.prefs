@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="i"/>\n<expression enabled\="true" text\="j"/>\n<expression enabled\="true" text\="board[i][j]"/>\n<expression enabled\="true" text\="k"/>\n<expression enabled\="true" text\="p"/>\n<expression enabled\="true" text\="set"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="minIndex"/>\n<expression enabled\="true" text\="word[c - 1]"/>\n<expression enabled\="true" text\="mid * mid"/>\n<expression enabled\="true" text\="x"/>\n<expression enabled\="true" text\="mid"/>\n</watchExpressions>\n
