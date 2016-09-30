@@ -7873,3 +7873,1102 @@ java.net.UnknownHostException: www.codetrails.com: unknown error
 	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
 	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2016-09-27 17:47:08.174 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-27 17:47:17.204
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-27 17:47:18.565
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-27 17:47:18.644
+!MESSAGE AWS toolkit core plugin initialized after 1445 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-27 17:47:18.654
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-09-27 17:47:18.660
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-09-27 17:47:18.673
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-09-27 17:47:18.676
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-09-27 17:47:18.676
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.861
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.865
+!MESSAGE AmazonisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.865
+!MESSAGE AmazonisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.865
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.866
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.866
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.866
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.866
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.866
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.867
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.868
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.868
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-27 17:47:18.868
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-09-27 17:47:29.828
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-09-27 17:48:19.643
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-09-27 17:48:19.646
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2016-09-28 14:54:30.856 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 14:54:43.201
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 14:54:44.594
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 14:54:44.689
+!MESSAGE AWS toolkit core plugin initialized after 1490 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 14:54:44.694
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-09-28 14:54:44.709
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-09-28 14:54:44.724
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-09-28 14:54:44.729
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-09-28 14:54:44.729
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.082
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.100
+!MESSAGE AmazonisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.101
+!MESSAGE AmazonisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.101
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.102
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.103
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.103
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.103
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.104
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.105
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.105
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.105
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.105
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.106
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.106
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.106
+!MESSAGE VMWareisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.107
+!MESSAGE VMWareisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.107
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.107
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.107
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 14:54:45.107
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-09-28 14:54:48.269
+!MESSAGE Downloading the SDK from CloudFront to location /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7856007942439584511/sdk.zip
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-09-28 14:54:56.231
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.amazonaws.eclipse.sdk.ui 1 0 2016-09-28 14:55:42.946
+!MESSAGE SDK download completes. Location: /var/folders/sl/s5y50t1n3lq9ff33dnm3gm2w0000gn/T/aws-java-sdk7856007942439584511/sdk.zip, File-length: 205846606
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-09-28 14:55:46.014
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-09-28 14:55:46.016
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY org.eclipse.jdt.core 4 4 2016-09-28 16:57:52.235
+!MESSAGE Exception occurred during problem detection:
+----------------------------------- SOURCE BEGIN -------------------------------------
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * LeetCode
+ * 47. Permutations II
+ * @author lorreina
+ *
+ */
+public class Permutations_II {
+	public List<List<Integer>> permuteUnique(int[] nums) {
+        List<List<Integer>> res = new ArrayList<> ();
+        if (nums == null || nums.length ==0) {
+            return res;
+        }
+        
+        Arrays.sort(nums);
+        
+        List<Integer> list = new ArrayList<Integer> ();
+        for (int i = 0; i < nums.length; i++) {
+            list.add(nums[i]);
+        }
+        
+        return helper(list);
+    }
+    
+    List<List<Integer>> helper(List<Integer> list) {
+        List<List<Integer>> res = new ArrayList<> ();
+        
+        if (list.size() == 1) {
+            res.add(new ArrayList<Integer> (list));
+            return res;
+        }
+        
+        int last = list.get(0);
+        for (int i = 0; i < list.size(); i++) {
+            int x = list.get(0);
+            list.remove(0);
+            
+            if (i > 0 && x == last) {
+                // res.add(new ArrayList<Integer> (list));
+                continue;
+            } else {
+                List<List<Integer>> sub = helper(list);
+                for (int j = 0; j < sub.size(); j++) {
+                    sub.get(j).add(0, x);
+                }
+                res.addAll(sub);
+            }
+            last = x;
+            
+            list.add(x);
+        }
+        
+        return res;
+    }
+    
+    public static void main(String[] args) {
+    	Permutations_II tmp = new Permutations_II();
+    	int[] nums = {1,1,2};
+    	List<List<Integer>> res = tmp.permuteUnique(nums);
+    	
+    	for (int i = 0; i < res.size(); i++) {
+    		for (int j = 0; j < res.get(i).size(); j++) {
+    			System.out.print(res.get(i).get(j));
+    			System.out.print(" ");
+    		}
+    		System.out.print(""\n);
+    	}
+    }
+}
+
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2016-09-28 16:57:52.237
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 1
+Java Model Exception: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:249)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	... 19 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2016-09-28 16:57:52.238
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2016-09-28 16:57:52.238
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2016-09-28 16:57:52.239
+!MESSAGE Error in JDT Core during reconcile
+!STACK 1
+Java Model Exception: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:249)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	... 19 more
+Caused by: java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SUBENTRY 1 org.eclipse.jdt.core 4 1005 2016-09-28 16:57:52.239
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.copy(ReferenceExpression.java:139)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.cachedResolvedCopy(ReferenceExpression.java:809)
+	at org.eclipse.jdt.internal.compiler.ast.ReferenceExpression.isCompatibleWith(ReferenceExpression.java:1058)
+	at org.eclipse.jdt.internal.compiler.lookup.PolyTypeBinding.isCompatibleWith(PolyTypeBinding.java:37)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4760)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.parameterCompatibilityLevel(Scope.java:4727)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:768)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.computeCompatibleMethod(Scope.java:700)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod0(Scope.java:1645)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.findMethod(Scope.java:1546)
+	at org.eclipse.jdt.internal.compiler.lookup.Scope.getMethod(Scope.java:2822)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.findMethodBinding(MessageSend.java:898)
+	at org.eclipse.jdt.internal.compiler.ast.MessageSend.resolveType(MessageSend.java:712)
+	at org.eclipse.jdt.internal.compiler.ast.Expression.resolve(Expression.java:1020)
+	at org.eclipse.jdt.internal.compiler.ast.Block.resolve(Block.java:117)
+	at org.eclipse.jdt.internal.compiler.ast.ForStatement.resolve(ForStatement.java:404)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolveStatements(AbstractMethodDeclaration.java:641)
+	at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.resolveStatements(MethodDeclaration.java:309)
+	at org.eclipse.jdt.internal.compiler.ast.AbstractMethodDeclaration.resolve(AbstractMethodDeclaration.java:551)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1188)
+	at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.resolve(TypeDeclaration.java:1301)
+	at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.resolve(CompilationUnitDeclaration.java:590)
+	at org.eclipse.jdt.internal.compiler.Compiler.resolve(Compiler.java:1023)
+	at org.eclipse.jdt.internal.core.CompilationUnitProblemFinder.process(CompilationUnitProblemFinder.java:197)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:259)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:579)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1085)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:171)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:90)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:789)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1250)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:126)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.access$0(JavaReconcilingStrategy.java:108)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:89)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:87)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:151)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:86)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:104)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:77)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:206)
+!SESSION 2016-09-28 23:26:55.097 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 23:27:04.961
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 23:27:05.939
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 23:27:06.070
+!MESSAGE AWS toolkit core plugin initialized after 1111 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-28 23:27:06.077
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-09-28 23:27:06.086
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-09-28 23:27:06.104
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-09-28 23:27:06.108
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-09-28 23:27:06.108
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.255
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.265
+!MESSAGE AmazonisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.265
+!MESSAGE AmazonisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.265
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.265
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.266
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.266
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.266
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.266
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.267
+!MESSAGE VMWareisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.268
+!MESSAGE VMWareisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.268
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.268
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.268
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-28 23:27:06.268
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-09-28 23:27:17.449
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-09-28 23:28:06.926
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-09-28 23:28:06.927
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2016-09-29 17:43:50.549 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 17:44:03.077
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 17:44:04.416
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 17:44:04.496
+!MESSAGE AWS toolkit core plugin initialized after 1423 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 17:44:04.502
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-09-29 17:44:04.506
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-09-29 17:44:04.520
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-09-29 17:44:04.522
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-09-29 17:44:04.522
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.668
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.672
+!MESSAGE AmazonisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.672
+!MESSAGE AmazonisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.672
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.673
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.674
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.674
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.674
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.674
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.674
+!MESSAGE VMWareisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.675
+!MESSAGE VMWareisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.675
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.675
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.675
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 17:44:04.675
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-09-29 17:44:16.638
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-09-29 17:45:06.416
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-09-29 17:45:06.418
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2016-09-29 18:50:04.509 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/lorreina/.eclipse_keyring -showlocation
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 18:50:16.481
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 18:50:18.077
+!MESSAGE Monitoring content of /Users/lorreina/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 18:50:18.227
+!MESSAGE AWS toolkit core plugin initialized after 1751 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2016-09-29 18:50:18.238
+!MESSAGE Found valid identity id cache us-east-1:31ec41a4-6147-41c2-9d1f-057733fc969a
+
+!ENTRY WACommon 4 0 2016-09-29 18:50:18.253
+!MESSAGE Plugin folder path:/Applications/Eclipse.app/Contents/Eclipse/plugins
+
+!ENTRY org.eclipse.ui 2 0 2016-09-29 18:50:18.267
+!MESSAGE The 'org.eclipse.ui.startup' extension from 'com.microsoft.applicationinsights.ui' does not provide a 'class' attribute.
+This usage is deprecated and a 'class' attribute should be provided.
+The release after Mars (4.5) will no longer support the deprecated usage!
+
+!ENTRY org.eclipse.ui 4 4 2016-09-29 18:50:18.273
+!MESSAGE Bad extension specification
+
+!ENTRY com.microsoft.applicationinsights.ui 4 0 2016-09-29 18:50:18.274
+!MESSAGE startup class must implement org.eclipse.ui.IStartup
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.433
+!MESSAGE Azure SDK is not installed.
+!STACK 0
+java.io.IOException: Azure SDK is not installed.
+	at com.interopbridges.tools.windowsazure.WindowsAzureProjectManager.getLatestAzureSdkDir(WindowsAzureProjectManager.java:2244)
+	at com.persistent.util.WAStartUp.getSchemasLocation(WAStartUp.java:246)
+	at com.persistent.util.WAStartUp.createEntries(WAStartUp.java:195)
+	at com.persistent.util.WAStartUp.makeXMLCatalogEntry(WAStartUp.java:183)
+	at com.persistent.util.WAStartUp.earlyStartup(WAStartUp.java:68)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:90)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:68)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$56.run(Workbench.java:2812)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.438
+!MESSAGE AmazonisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.438
+!MESSAGE AmazonisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.439
+!MESSAGE CitadelisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.439
+!MESSAGE CitadelisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.440
+!MESSAGE ExpediaisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.440
+!MESSAGE ExpediaisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.440
+!MESSAGE FacebookisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.440
+!MESSAGE FacebookisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.441
+!MESSAGE LeetCodeisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.441
+!MESSAGE LeetCodeisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.441
+!MESSAGE MicrosoftisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.442
+!MESSAGE MicrosoftisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.442
+!MESSAGE OODisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.442
+!MESSAGE OODisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.442
+!MESSAGE VMWareisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.442
+!MESSAGE VMWareisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.442
+!MESSAGE WePayisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.443
+!MESSAGE WePayisNaturefalse
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.443
+!MESSAGE ZenefitsisOpentrue
+
+!ENTRY WAEclipsePlugin 4 0 2016-09-29 18:50:18.443
+!MESSAGE ZenefitsisNaturefalse
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2016-09-29 18:50:30.107
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2016-09-29 18:51:19.516
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2016-09-29 18:51:19.518
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732

@@ -1,0 +1,90 @@
+import java.util.ArrayDeque;
+import java.util.HashSet;
+import java.util.Queue;
+
+/**
+ * LeetCode
+ * 365. Water and Jug Problem
+ * @author lorreina
+ *
+ */
+public class Water_and_Jug_Problem {
+	public boolean canMeasureWater(int x, int y, int z) {
+        if (z < 0) {
+            return false;
+        }
+        
+        if (z == 0) {
+            return true;
+        }
+        
+        if (x == y) {
+            if (z == x) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        if (z == x || z == y || z == (x + y)) {
+            return true;
+        }
+        
+        if (z > (x + y)) {
+            return false;
+        }
+        
+        if (x > y) {
+            return helper(y, x, z);
+        } else {
+            return helper(x, y, z);
+        }
+    }
+    
+    private boolean helper(int x, int y, int z) {
+        if (x == 0) {
+            return (z == y);
+        }
+        int water = z % x;
+        if (water == y % x) {
+        	return true;
+        }
+        HashSet<Integer> set = new HashSet<Integer> ();
+        
+        
+        Queue<Integer> queue = new ArrayDeque<Integer> ();
+        queue.offer(0);
+        
+        while (!queue.isEmpty()) {
+        	int n = queue.poll();
+        	if (set.contains(n)) {
+        		continue;
+        	} else {
+        		
+        	}
+        }
+        
+        int n = 0;
+        int n1 = 0;
+        int n2 = 0;
+        while (true) {
+            if (set.contains(n)) {
+                return false;
+            } else {
+                n = x - (y - n) % x;
+                if (n == water || z == n + y) {
+                    return true;
+                }
+                set.add(n);
+            }
+        }
+    }
+    
+    public static void main(String[] args) {
+    	Water_and_Jug_Problem tmp = new Water_and_Jug_Problem();
+    	int x = 23;
+    	int y = 46;
+    	int z = 12;
+    	System.out.println(tmp.canMeasureWater(x, y, z));
+    }
+}

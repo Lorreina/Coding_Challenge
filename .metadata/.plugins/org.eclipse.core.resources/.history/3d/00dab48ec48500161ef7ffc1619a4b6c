@@ -1,0 +1,65 @@
+/**
+ * LeetCode
+ * 365. Water and Jug Problem
+ * @author lorreina
+ *
+ */
+public class Water_and_Jug_Problem {
+	public boolean canMeasureWater(int x, int y, int z) {
+        if (z < 0) {
+            return false;
+        }
+        
+        if (z == 0) {
+            return true;
+        }
+        
+        if (x == y) {
+            if (z == x) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        
+        if (z == x || z == y || z == (x + y)) {
+            return true;
+        }
+        
+        if (z > (x + y)) {
+            return false;
+        }
+        
+        if (x > y) {
+            return helper(y, x, z);
+        } else {
+            return helper(x, y, z);
+        }
+    }
+    
+    private boolean helper(int x, int y, int z) {
+        if (x == 0) {
+            return (z == y);
+        }
+        int water = z % x;
+        HashSet<Integer> set = new HashSet<Integer> ();
+        
+        int n = 0;
+        while (true) {
+            int remainder = (y - n) % x;
+            if (set.contains(remainder)) {
+                return false;
+            } else {
+                n = x - remainder;
+                if (n == water || z == n + y) {
+                    return true;
+                }
+                set.add(n);
+            }
+        }
+    }
+    
+    public static void main(String[] args) {
+    	
+    }
+}

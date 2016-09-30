@@ -1,0 +1,17 @@
+1. 基本算一个脑筋急转弯 一个5盎司和一个3盎司容器，用这两个量出所有1到n的盎司的容量
+2. 是排序，十的九次方总共的数已经拍好序，现在有十的6次方个数无顺序，然后根据有顺序的大数据集去排着找无顺序的里面的数，有就记录下1，没有就标0，问这种方式比快排这种好还是不好
+3. removeAllNode，就是给一个target值删除链表里的所有与此value相同的节，最后还问了java范式什么。
+4. code zigzag iterator 就是一个二维数组，按照列的顺序输出。问了下复杂度
+5. bonus question写一个singleton class。
+----propel----
+6. 多线程, 线程安全
+7. 写了个LRU cache
+8. 讲了下clock那个VP 和 PP的过程。 
+9. 算法题是reverse linkedlist。
+10. file system如何存入文件，可以让file system更balance
+11. 数digit 1的个数
+12. 一个数组只有0，1, 2，用O(n)的时间复杂度去sort
+13. merge K sorted linked list, using both recursion and heap
+14. text justfication
+15. how to design a cell phone system like waze
+16. http://www.1point3acres.com/bbs/thread-186179-1-1.html
