@@ -1,0 +1,31 @@
+import java.util.Stack;
+
+/**
+ * LeetCode
+ * 42. Trapping Rain Water
+ * @author lorreina
+ *
+ */
+public class Trapping_Rain_Water {
+	public int trap(int[] height) {
+		if (height == null || height.length <= 2) {
+			return 0;
+		}
+		int sum = 0;
+		Stack<Integer> stack = new Stack<Integer> ();
+		int hi = 0;
+		
+		for (int i = 1; i < height.length; i++) {
+			if (height[i] < height[hi]) {
+				stack.push(height[i]);
+			} else {
+				while (!stack.isEmpty()) {
+					sum += height[hi] - stack.pop();
+				}
+				hi = i;
+			}
+		}
+		
+		return 0;
+	}
+}

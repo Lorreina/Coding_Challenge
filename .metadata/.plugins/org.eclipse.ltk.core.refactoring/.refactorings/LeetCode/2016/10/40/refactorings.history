@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Unique_Path&apos; to &apos;Unique_Paths&apos;&#x0A;- Original project: &apos;LeetCode&apos;&#x0A;- Original element: &apos;Unique_Path&apos;&#x0A;- Renamed element: &apos;Unique_Paths&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Unique_Path&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Unique_Path.java[Unique_Path" matchStrategy="1" name="Unique_Paths" qualified="false" references="true" similarDeclarations="false" stamp="1475357988993" textual="false" version="1.0"/>
+</session>

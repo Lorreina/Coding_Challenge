@@ -1,0 +1,18 @@
+/**
+ * JAVA basic - Polymorphism
+ * @author lorreina
+ *
+ */
+public class Java_Polymorphism {
+	public class Fruit {
+		public void print() {
+			System.out.println("I am a Fruit.");
+		}
+	}
+	
+	public class Apple extends Fruit {
+		public void print() {
+			System.out.println("I am an apple.");
+		}
+	}
+}

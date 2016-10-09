@@ -18,7 +18,7 @@ public class Linked_List_Cycle_II {
         ListNode fast = head;
         
         while (fast.next != null && fast.next.next != null) {
-            if (slow == fast) {
+            if (slow == fast && slow != head) {
                 break;
             }
             slow = slow.next;
@@ -39,9 +39,20 @@ public class Linked_List_Cycle_II {
         return pointer;
     }
 	
-	public class ListNode {
+	public static class ListNode {
 		int val;
 		ListNode next;
 		ListNode(int x) { val = x; }
+	}
+	
+	public static void main(String[] args) {
+		ListNode head = new ListNode(3);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(0);
+		head.next.next.next = new ListNode(-4);
+		head.next.next.next.next = head.next;
+		Linked_List_Cycle_II tmp = new Linked_List_Cycle_II();
+		System.out.println(tmp.detectCycle(head).val);
+		
 	}
 }

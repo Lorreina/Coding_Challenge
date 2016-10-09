@@ -7,6 +7,95 @@ import java.util.ArrayDeque;
  *
  */
 public class Smallest_Rectangle_Enclosing_Black_Pixels {
+	// Solution 2: Binary Search
+	// binray search for top/bottom rows and left/right cols.
+	int m;
+    int n;
+    public int minArea(char[][] image, int x, int y) {
+        if (image == null || image.length == 0 || image[0].length == 0) {
+            return 0;
+        }
+        m = image.length;
+        n = image[0].length;
+        int left = searchLeft(image, 0, y);
+        int right = searchRight(image, y, n);
+        int top = searchTop(image, 0, x);
+        int bottom = searchBottom(image, x, m);
+        
+        return (right - left) * (bottom - top);
+    }
+    
+    private int searchLeft(char[][] image, int left, int right) {
+        while (left < right) {
+            int k = 0;
+            int mid = left + (right - left) / 2;
+            while (k < m && image[k][mid] == '0') {
+                k++;
+            }
+            if (k == m) {
+                left = mid + 1;
+            } else {
+                right = mid;
+            }
+        }
+        
+        return left;
+    }
+    
+    private int searchRight(char[][] image, int left, int right) {
+        while (left < right) {
+            int k = 0;
+            int mid = left + (right - left) / 2;
+            while (k < m && image[k][mid] == '0') {
+                k++;
+            }
+            if (k == m) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        
+        return right;
+    }
+    
+    private int searchTop(char[][] image, int top, int bottom) {
+        while (top < bottom) {
+            int k = 0;
+            int mid = top + (bottom - top) / 2;
+            while (k < n && image[mid][k] == '0') {
+                k++;
+            }
+            if (k == n) {
+                top = mid + 1;
+            } else {
+                bottom = mid;
+            }
+        }
+        
+        return top;
+    }
+    
+    private int searchBottom(char[][] image, int top, int bottom) {
+        while (top < bottom) {
+            int k = 0;
+            int mid = top + (bottom - top) / 2;
+            while (k < n && image[mid][k] == '0') {
+                k++;
+            }
+            if (k == n) {
+                bottom = mid;
+            } else {
+                top = mid + 1;
+            }
+        }
+        
+        return bottom;
+    }
+	
+	
+	// Solution 1: BFS
+    /*
     public int minArea(char[][] image, int x, int y) {
         if (image == null || image.length == 0 || image[0].length == 0) {
             return 0;
@@ -59,6 +148,7 @@ public class Smallest_Rectangle_Enclosing_Black_Pixels {
         
         return (right - left + 1) * (down - up + 1);
     }
+    */
     
     public static void main(String[] args) {
     	char[][] image = {{'0', '0', '1', '0'}, {'0','1','1','0'}, {'0','1','0','0'}};

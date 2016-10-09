@@ -1,0 +1,155 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+
+/**
+ * LeetCode
+ * 149. Max Points on a Line
+ * @author lorreina
+ *
+ */
+public class Max_Points_on_a_Line {
+//	public int maxPoints(Point[] points) {
+//        if (points == null || points.length == 0) {
+//            return 0;
+//        }
+//        int maxPoints = 1;
+//        
+//        HashMap<String, HashSet<Point>> lines = new HashMap<String, HashSet<Point>> ();
+//        
+//        for (int i = 0; i < points.length; i++) {
+//            for (int j = i + 1; j < points.length; j++) {
+//                int a = points[i].y - points[j].y;
+//                int b = points[j].x - points[i].x;
+//                String s;
+//                if (a == 0 && b == 0) {
+//                    s = String.valueOf(points[j].x) + "+" + String.valueOf(points[j].y);
+//                } else {
+//                    int c = (points[i].x * points[j].y) - (points[j].x  * points[i].y);
+//                    if (a < 0) {
+//                        a = -a;
+//                        b = -b;
+//                        c = -c;
+//                    }
+//                    
+//                    int gcd = gcd(a, Math.abs(b));
+//                    if (c % gcd == 0) {
+//                    	a = a / gcd;
+//                    	b = b / gcd;
+//                    	c = c / gcd;
+//                    }
+//                    
+//                    s = String.valueOf(a) + "+" + String.valueOf(b) + "+" + String.valueOf(c);
+//                }
+//                if (lines.containsKey(s)) {
+//                    lines.get(s).add(points[i]);
+//                    lines.get(s).add(points[j]);
+//                    maxPoints = Math.max(maxPoints, lines.get(s).size());
+//                } else {
+//                    HashSet<Point> set = new HashSet<Point>();
+//                    set.add(points[i]);
+//                    set.add(points[j]);
+//                    lines.put(s, set);
+//                    maxPoints = Math.max(maxPoints, 2);
+//                }
+//            }
+//        }
+//        
+//        return maxPoints;
+//        
+//    }
+//	
+//	private int gcd(int a, int b) {
+//	    if (a == 0)
+//	        return b;
+//
+//	    while (b != 0) {
+//	        if (a > b)
+//	            a = a - b;
+//	        else
+//	            b = b - a;
+//	    }
+//
+//	    return a;
+//	}
+	
+	 private int gcd(int a, int b) {
+        //a = Math.abs(a);
+        //b = Math.abs(b);
+        while (a != 0) {
+            int tmp = b % a;
+            b = a;
+            a = tmp;
+        }
+        return b;
+    }
+	    
+    private List<Integer> generateL(int a, int b, int c) {
+        int tmp = gcd(a, b);
+        if (tmp == 0)
+            tmp = 1;
+        if (a / tmp < 0)
+            tmp = tmp * -1;
+        a = a / tmp;
+        b = b / tmp;
+        c = c / tmp;
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(a);
+        list.add(b);
+        list.add(c);
+        return list;
+    }
+    public int maxPoints(Point[] points) {
+        if (points == null || points.length == 0)
+            return 0;
+        if (points.length == 1)
+            return 1;
+        HashMap<List<Integer>, HashSet<Integer>> map = new HashMap<List<Integer>, HashSet<Integer>>();
+        for (int i = 0; i < points.length; i++) {
+            int x0 = points[i].x, y0 = points[i].y;
+            for (int j = i + 1; j < points.length; j++) {
+                int x1 = points[j].x, y1 = points[j].y;
+                int a = y1 - y0;
+                int b = x0 - x1;
+                int c = -(a * x0 + b * y0);
+                List<Integer> tmp = generateL(a, b, c);
+                if (map.containsKey(tmp)) {
+                    HashSet<Integer> set = map.get(tmp);
+                    set.add(i);
+                    set.add(j);
+                } else {
+                    HashSet<Integer> set = new HashSet<Integer>();
+                    set.add(i);
+                    set.add(j);
+                    map.put(tmp, set);
+                }
+            }
+        }
+        int max = 0;
+        for (List<Integer> l : map.keySet()) {
+            int num = map.get(l).size();
+            max = Math.max(max, num);
+        }
+        return max;
+    }
+	
+	public static class Point {
+		int x;
+		int y;
+		Point() { x = 0; y = 0; }
+		Point(int a, int b) { x = a; y = b; }
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Max_Points_on_a_Line tmp = new Max_Points_on_a_Line();
+		Point[] points = new Point[3];
+		points[0] = new Point(0,0);
+		points[1] = new Point(-1,-1);
+		points[2] = new Point(2,2);
+		
+		System.out.println(tmp.maxPoints(points));
+	}
+}

@@ -1,0 +1,16 @@
+/**
+ * CC150 Locks Example
+ * @author lorreina
+ *
+ */
+public class Snychronization_and_Locks {
+	public static class MyCalss extends Thread {
+		private String name;
+		private MyObject myObj;
+		
+		public MyClass(My Obj, String n) {
+			this.name = n;
+			this.myObj = Obj;
+		}
+	}
+}

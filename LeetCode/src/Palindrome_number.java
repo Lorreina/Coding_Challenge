@@ -1,4 +1,9 @@
-
+/**
+ * LeetCode
+ * 9. Palindrome Number
+ * @author lorreina
+ *
+ */
 public class Palindrome_number {
     public static boolean isPalindrome(int x) {
         if (x < 0) {

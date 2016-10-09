@@ -1,0 +1,198 @@
+import java.util.ArrayList;
+
+/**
+ * LeetCode
+ * 321. Create Maximum Number
+ * @author lorreina
+ *
+ */
+public class Create_Maximum_Number {
+	public int[] maxNumber(int[] nums1, int[] nums2, int k) {
+        if (k <= 0) {
+            return new int[0];
+        }
+        if (nums1 == null || nums1.length == 0) {
+            return quickSolve(nums2, k);
+        } else if (nums2 == null || nums2.length == 0) {
+            return quickSolve(nums1, k);
+        }
+        
+        int m = nums1.length;
+        int n = nums2.length;
+        
+        int start1 = Math.max(0, m - k);
+        int end1 = Math.min(m, m + n - k);
+        int start2 = Math.max(0, n - k);
+        int end2 = Math.min(n, m + n - k);
+        
+        int[] res = new int[k];
+        
+        ArrayList<Integer[]> part1 = generatePart(nums1, start1, end1);
+        ArrayList<Integer[]> part2 = generatePart(nums2, start2, end2);
+        
+        for (int i = 0; i < (end1 - start1 + 1); i++) {
+            Integer[] list1 = part1.get(i);
+            Integer[] list2 = part2.get(part2.size() - i - 1);
+            
+            merge(list1, list2, res);
+        }
+        
+        return res;
+    }
+    
+    private void merge(Integer[] list1, Integer[] list2, int[] res) {
+        int i = 0, j = 0;
+        boolean isGreat = false;
+        while (i < list1.length && j < list2.length) {
+            if (list1[i] > list2[j]) {
+                if (isGreat) {
+                    res[i + j] = list1[i];
+                } else {
+                    if (list1[i] < res[i + j]) {
+                        return;
+                    } else if (list1[i] > res[i + j]) {
+                        isGreat = true;
+                        res[i + j] = list1[i];
+                    }
+                }
+                i++;
+            } else {
+                if (isGreat) {
+                    res[i + j] = list2[j];
+                } else {
+                    if (list2[j] < res[i + j]) {
+                        return;
+                    } else if (list2[j] > res[i + j]) {
+                        isGreat = true;
+                        res[i + j] = list2[j];
+                    }
+                }
+                j++;
+            }
+        }
+        
+        while (i < list1.length) {
+            if (isGreat) {
+                res[i + j] = list1[i];
+            } else {
+                if (list1[i] < res[i + j]) {
+                    return;
+                } else if (list1[i] > res[i + j]) {
+                    isGreat = true;
+                    res[i + j] = list1[i];
+                }
+            }
+            i++;
+        }
+        
+        while (j < list1.length) {
+            if (isGreat) {
+                res[i + j] = list1[j];
+            } else {
+                if (list2[j] < res[i + j]) {
+                    return;
+                } else if (list2[j] > res[i + j]) {
+                    isGreat = true;
+                    res[i + j] = list2[j];
+                }
+            }
+            j++;
+        }
+        
+        return;
+    }
+    
+    private ArrayList<Integer[]> generatePart(int[] nums, int start, int end) {
+        ArrayList<Integer[]> res = new ArrayList<Integer[]> ();
+        ArrayList<Integer> list = new ArrayList<Integer> ();
+        
+        for (int i = 0; i < nums.length; i++) {
+            list.add(nums[i]);
+        }
+        
+        if (start == 0) {
+        	res.add(list.toArray(new Integer[list.size()]));
+        }
+        
+        int p = 0;
+        for (int i = 1; i <= end; i++) {
+        	while (p < list.size() - 1 && list.get(p) >= list.get(p + 1)) {
+    			p++;
+    		}
+    		list.remove(p);
+    		if (p > 0) {
+    			p--;
+    		}
+    		res.add(list.toArray(new Integer[list.size()]));
+    	}
+    		
+//        	if (p > 0 && list.get(p) > list.get(p - 1)) {
+//        		list.remove(p - 1);
+//        		p--;
+//        		res.add(list.toArray(new Integer[list.size()]));
+//        	} else {
+//        		while (p < list.size() - 1 && list.get(p) >= list.get(p + 1)) {
+//        			p++;
+//        		}
+//        		list.remove(p);
+//        		p--;
+//        	}
+//        	
+//        	
+//        	
+//            if (list.size() == 1) {
+//                res.add(new Integer[0]);
+//            } else {
+//            	int p = 0;
+//                while (p < list.size() - 1 && list.get(p) > list.get(p + 1)) {
+//                    p++;
+//                }
+//                list.remove(p);
+////                if (p == list.size() - 1) {
+////                    list.remove(p);
+////                    p--;
+////                } else {
+////                    list.remove(p);
+////                }
+//                res.add(list.toArray(new Integer[list.size()]));
+//            }
+//        }
+        
+        return res;
+    }
+    
+    private int[] quickSolve(int[] nums, int k) {
+        if (nums == null || nums.length == 0) {
+            return new int[0];
+        }
+        
+        int n = nums.length;
+        int[] res = new int[k];
+        int p = 0, s = 1, index = 0;
+        for (int i = 0; i < n - k; i++) {
+            if (nums[p] > nums[s]) {
+                res[index++] = nums[s];
+                p = s;
+            }
+            s++;
+        }
+        
+        for (; s < nums.length; s++) {
+            res[index++] = nums[s];
+        }
+        
+        return res;
+    }
+    
+	public static void main(String[] args) {
+		int[] nums1 = {3,4,6,5};
+		int[] nums2 = {9,1,2,5,8,3};
+		int k = 5;
+		Create_Maximum_Number tmp = new Create_Maximum_Number();
+		int[] res = tmp.maxNumber(nums1, nums2, k);
+		for (int i = 0 ; i < res.length; i++) {
+			System.out.print(res[i]);
+			System.out.print("  ");
+		}
+	}
+}

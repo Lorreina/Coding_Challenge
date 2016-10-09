@@ -1,0 +1,126 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+/**
+ * LeetCode
+ * 218. The Skyline Problem
+ * @author lorreina
+ *
+ */
+public class The_Skyline_Problem {
+	public List<int[]> getSkyline(int[][] buildings) {
+        List<int[]> res = new ArrayList<int[]> ();
+        if (buildings == null || buildings.length == 0) {
+            return res;
+        }
+        
+        // sort building according to height in ascending order
+        Arrays.sort(buildings, new Comparator<int[]> () {
+           public int compare(int[] a1, int[] a2) {
+               return Integer.compare(a1[2], a2[2]);
+           } 
+        });
+        
+        SegmentTreeNode root = new SegmentTreeNode(0, 10000);
+        
+        for (int i = 0; i < buildings.length; i++) {
+            addBuilding(buildings[i][0], buildings[i][1], buildings[i][2], root);
+        }
+        
+        int i = 0;
+        int lastHeight = 0;
+        while (i <= 10000) {
+            int[] pair = new int[2];
+            findHeight(root, i, pair);
+            if (pair[1] != lastHeight) {
+                lastHeight = pair[1];
+                int tmp = pair[0];
+                pair[0] = i;
+                i = tmp;
+                res.add(pair);
+            } else {
+            	i = pair[0];
+            }
+        }
+        
+        return res;
+    }
+
+    
+    private void findHeight(SegmentTreeNode root, int index, int[] pair) {
+        if (root.isSame == true) {
+            pair[1] = root.height;
+            pair[0] = root.hi;
+            return;
+        }
+        
+        if (index < root.left.hi) {
+            findHeight(root.left, index, pair);
+        } else {
+            findHeight(root.right, index, pair);
+        }
+        
+    }
+    
+    private void addBuilding(int lo, int hi, int height, SegmentTreeNode root) {
+        if (root.lo == lo && root.hi == hi) {
+            root.height = height;
+            return;
+        }
+        
+        if (height > root.height) {
+            root.isSame = false;
+        }
+        
+        if (root.left == null) {
+            int mid = root.lo + (root.hi - root.lo) / 2;
+            root.left = new SegmentTreeNode(root.lo, mid);
+            root.right = new SegmentTreeNode(mid, root.hi);
+        }
+        
+        if (hi <= root.left.hi) {
+            addBuilding(lo, hi, height, root.left);
+        } else if (lo >= root.right.lo) {
+            addBuilding(lo, hi, height, root.right);
+        } else {
+            addBuilding(lo, root.left.hi, height, root.left);
+            addBuilding(root.right.lo, hi, height, root.right);
+        }
+        
+        if (root.left.height > 0 && root.left.height == root.right.height) {
+            root.height = root.left.height;
+            root.isSame = true;
+        }
+    }
+    
+    class SegmentTreeNode {
+        int lo;
+        int hi;
+        int height;
+        boolean isSame;
+        SegmentTreeNode left;
+        SegmentTreeNode right;
+        
+        public SegmentTreeNode(int lo, int hi) {
+            this.lo = lo;
+            this.hi = hi;
+            this.height = 0;
+            this.isSame = true;
+            this.left = null;
+            this.right = null;
+        }
+    }
+    
+    public static void main(String[] args) {
+    	The_Skyline_Problem tmp = new The_Skyline_Problem();
+    	int[][] buildings = {{2,9,10}, {3, 7, 15}, {5, 12, 12}, {15, 20, 10}, {19, 24, 8}};
+    	List<int[]> res = tmp.getSkyline(buildings);
+    	for (int i = 0; i < res.size(); i++) {
+    		System.out.print(res.get(i)[0]);
+    		System.out.print(" ");
+    		System.out.println(res.get(i)[1]);
+    	}
+    }
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Single_Number&apos; to &apos;Single_Number_II&apos;&#x0A;- Original project: &apos;LeetCode&apos;&#x0A;- Original element: &apos;Single_Number&apos;&#x0A;- Renamed element: &apos;Single_Number_II&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Single_Number&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Single_Number.java[Single_Number" matchStrategy="1" name="Single_Number_II" qualified="false" references="true" similarDeclarations="false" stamp="1475478817669" textual="false" version="1.0"/>
+</session>
