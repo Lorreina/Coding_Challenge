@@ -8,12 +8,12 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class LockedATM {
 	private Lock lock1;
-	private Lock lock2;
+//	private Lock lock2;
 	private int balance = 100;
 	
 	public LockedATM() {
 		lock1 = new ReentrantLock();
-		lock2 = new ReentrantLock(); 
+//		lock2 = new ReentrantLock(); 
 	}
 	
 	public int withdraw(int value) {

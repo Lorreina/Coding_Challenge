@@ -1,0 +1,51 @@
+/**
+ * LeetCode
+ * 402. Remove K Digits
+ * @author lorreina
+ *
+ */
+public class Remove_K_Digits {
+	public String removeKdigits(String num, int k) {
+        if (num == null || num.length() == 0) {
+            return num;
+        }
+        
+        k = num.length() - k;
+        char[] ch = num.toCharArray();
+        char[] res = new char[k];
+        int start = 0;
+        for (int i = k; i > 0; i--) {
+            int index = indexOfMin(ch, start, ch.length - i);
+            res[k - i] = ch[index];
+            start = index + 1;
+        }
+        
+        int noneZero = 0;
+        for (int i = 0; i < res.length; i++) {
+            if (res[i] != '0') {
+                noneZero = i;
+                break;
+            }
+        }
+        
+        return String.valueOf(res).substring(noneZero, res.length);
+    }
+    
+    private int indexOfMin(char[] ch, int start, int end) {
+        int index = start;
+        for (int i = start; i <= end; i++) {
+            if (ch[i] < ch[index]) {
+                index = i;
+            }
+        }
+        
+        return index;
+    }
+    
+    public static void main(String[] args) {
+    	Remove_K_Digits tmp = new Remove_K_Digits();
+    	String num = "1432219";
+    	int k = 3;
+    	System.out.println(tmp.removeKdigits(num, k));
+    }
+}

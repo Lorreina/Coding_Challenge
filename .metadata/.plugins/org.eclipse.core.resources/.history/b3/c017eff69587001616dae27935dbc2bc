@@ -1,7 +1,0 @@
-
-public class Singleton_Class {
-	public class Restaurant {
-		private static Restaurant _instance = null;
-		
-	}
-}

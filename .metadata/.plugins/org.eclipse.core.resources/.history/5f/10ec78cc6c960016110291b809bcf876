@@ -1,0 +1,36 @@
+/**
+ * LeetCode
+ * 418. Sentence Screen Fitting
+ * @author lorreina
+ *
+ */
+public class Sentence_Screen_Fitting {
+	public int wordsTyping(String[] sentence, int rows, int cols) {
+        String s = String.join(" ", sentence);
+        int len = s.length();
+        int count = 0;
+        int[] map = new int[len];
+        
+        for (int i = 1; i < len; i++) {
+            if (s.charAt(i) == ' ') {
+                map[i] = 1;
+            } else {
+                map[i] = map[i - 1] - 1;
+            }
+        }
+        
+        for (int i = 0; i < rows; i++) {
+            count += cols;
+            count += map[count % len];
+        }
+        
+        return count / len;
+    }
+	
+	
+	public static void main(String[] args) {
+		String[] sentence = {"I", "had", "apple", "pie"};
+		String s = String.join(" ", sentence) + " ";
+		System.out.println(s + "!");
+	}
+}

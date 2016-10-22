@@ -6,6 +6,48 @@
  */
 public class Remove_K_Digits {
 	public String removeKdigits(String num, int k) {
+        if (num == null || num.length() == 0 || k == 0) {
+            return num;
+        }
+        
+        if (k == num.length()) {
+            return "0";
+        }
+        
+        char[] nums = num.toCharArray();
+        int start = 0;
+        StringBuilder res = new StringBuilder();
+        
+        for (int end = k; end < nums.length; end++) {
+            int index = indexOfMin(nums, start, end);
+            res.append(nums[index]);
+            start = index + 1;
+        }
+        
+        // remove leading zeros;
+        while (res.length() > 0 && res.charAt(0) == '0') {
+            res.deleteCharAt(0);
+        }
+        
+        if (res.length() == 0) {
+            return "0";
+        }
+        return res.toString();
+    }
+    
+    private int indexOfMin(char[] nums, int start, int end) {
+        int min = start;
+        for (int i = start + 1; i <= end; i++) {
+            if (nums[i] < nums[min]) {
+                min = i;
+            }
+        }
+        
+        return min;
+    }
+	
+	/*
+	public String removeKdigits(String num, int k) {
         if (num == null || num.length() == 0) {
             return num;
         }
@@ -41,11 +83,14 @@ public class Remove_K_Digits {
         
         return index;
     }
+    */
     
     public static void main(String[] args) {
     	Remove_K_Digits tmp = new Remove_K_Digits();
     	String num = "1432219";
+//    	String num = "10200";
     	int k = 3;
+//    	int k = 1;
     	System.out.println(tmp.removeKdigits(num, k));
     }
 }

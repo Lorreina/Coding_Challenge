@@ -1,0 +1,11 @@
+/**
+ * LeetCode
+ * 418. Sentence Screen Fitting
+ * @author lorreina
+ *
+ */
+public class Sentence_Screen_Fitting {
+	public static void main(String[] args) {
+		
+	}
+}

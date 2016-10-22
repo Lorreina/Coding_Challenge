@@ -8,6 +8,85 @@ import java.util.List;
  *
  */
 public class Palindrome_Permutation_II {
+	// Version 2: Rotate + dfs
+	public List<String> generatePalindromes(String s) {
+        List<String> res = new ArrayList<String> ();
+        if (s == null || s.length() == 0) {
+            return res;
+        }
+        
+        int[] dict = new int[256];
+        for (char c : s.toCharArray()) {
+            dict[c - 'A'] += 1;
+        }
+        
+        char single = '#';
+        StringBuilder sb = new StringBuilder();
+        // char[] ch = new int[s.length() / 2];
+        // int index = 0;
+        for (int i = 0; i < dict.length; i++) {
+            char c = (char) ('A' + i);
+            if (dict[i] % 2 == 1 && single != '#') {
+                return res;
+            } else if (dict[i] % 2 == 1) {
+                single = c;
+            }
+            
+            for (int j = 0; j < dict[i] / 2; j++) {
+                sb.append(c);
+            }
+        }
+        
+        if (sb.length() == 0) {
+            res.add(s);
+            return res;
+        }
+    
+        List<StringBuilder> half = helper(sb);
+        if (single == '#') {
+            for (int i = 0; i < half.size(); i++) {
+                res.add(half.get(i).toString() + half.get(i).reverse().toString());
+            }
+        } else {
+            for (int i = 0; i < half.size(); i++) {
+                res.add(half.get(i).toString() + single + half.get(i).reverse().toString());
+            }
+        }
+        
+        return res;
+    }
+    
+    private List<StringBuilder> helper(StringBuilder sb) {
+        List<StringBuilder> list = new ArrayList<StringBuilder> ();
+        
+        if (sb.length() == 1) {
+            list.add(new StringBuilder(sb));
+            return list;
+        }
+        
+        char last = '#';
+        for (int i = 0; i < sb.length(); i++) {
+            char x = sb.charAt(0);
+            sb.deleteCharAt(0);
+            
+            if (i == 0 || x != last) {
+                List<StringBuilder> subList = helper(sb);
+                for (int j = 0; j < subList.size(); j++) {
+                    subList.get(j).insert(0, x);
+                    list.add(subList.get(j));
+                }
+            }
+            
+            last = x;
+            sb.append(x);
+        }
+        
+        return list;
+    }
+	
+	
+	// Version 1: dfs
+	/*
     public List<String> generatePalindromes(String s) {
         List<String> result = new ArrayList<String> ();
         if (s == null || s.length() == 0) {
@@ -88,6 +167,7 @@ public class Palindrome_Permutation_II {
         }
         return;
     }
+    */
     
     public static void main(String[] args) {
     	Palindrome_Permutation_II tmp = new Palindrome_Permutation_II();

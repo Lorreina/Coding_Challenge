@@ -1,0 +1,30 @@
+
+public class Indeed {
+	public static int findMaxSum(int[] nums, int threshold) {
+		int maxSum = 0;
+		int left = 0;
+		
+		int currSum = 0;
+		for (int i = 0; i < nums.length; i++) {
+			currSum += nums[i];
+			while (currSum > threshold && left < i) {
+				currSum -= nums[left];
+				left++;
+			}
+			
+			maxSum = Math.max(currSum, maxSum);
+		}
+		
+		
+		
+		return maxSum;
+	}
+	
+	public static void main(String[] args) {
+//		int[] nums = {3, 3, 5, 1, 7};
+		int[] nums = {4, 8, 2};
+//		int threshold = 10;
+		int threshold = 1;
+		System.out.println(findMaxSum(nums, threshold));
+	}
+}

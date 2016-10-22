@@ -1,0 +1,17 @@
+
+public class Indeed {
+	public findMaxSum(int[] nums, int threshold) {
+		int maxSum = 0;
+		
+		
+		
+		
+		return maxSum;
+	}
+	
+	public static void main(String[] args) {
+		int[] nums = {3, 3, 5, 1, 7};
+		int threshold = 10;
+		System.out.println(findMaxSum(nums, threshold));
+	}
+}

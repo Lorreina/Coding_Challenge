@@ -1,0 +1,13 @@
+/**
+ * LeetCode
+ * 418. Sentence Screen Fitting
+ * @author lorreina
+ *
+ */
+public class Sentence_Screen_Fitting {
+	public static void main(String[] args) {
+		String[] sentence = {"I", "had", "apple", "pie"};
+		String s = String.join(" ", sentence) + " ";
+		System.out.println(s);
+	}
+}

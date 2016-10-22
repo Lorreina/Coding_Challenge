@@ -5,6 +5,83 @@
  *
  */
 public class Sort_Transformed_Array {
+	// Version 2:
+	
+	public int[] sortTransformedArray(int[] nums, int a, int b, int c) {
+        if (nums == null || nums.length == 0) {
+            return nums;
+        }
+        
+        int n = nums.length;
+        int[] res = new int[n];
+        
+        
+        if (a == 0) {
+            if (b >= 0) {
+                for (int i = 0; i < n; i++) {
+                    res[i] = f(nums[i], a, b, c);
+                }
+            } else {
+                for (int i = 0; i < n; i++) {
+                    res[i] = f(nums[n - i - 1], a, b, c);
+                }
+            }
+            return res;
+        }
+        
+        // when a != 0
+        if (a < 0) {
+            int i = 0, j = n - 1;
+            int index = 0;
+            while (i <= j) {
+                int left = f(nums[i], a, b, c);
+                int right = f(nums[j], a, b, c);
+                if (left <= right) {
+                    res[index++] = left;
+                    i++;
+                } else {
+                    res[index++] = right;
+                    j--;
+                }
+            }
+        } else {
+            int i = 0, j = n - 1;
+            int index = n - 1;
+            while (i <= j) {
+                int left = f(nums[i], a, b, c);
+                int right = f(nums[j], a, b, c);
+                if (left >= right) {
+                    res[index--] = left;
+                    i++;
+                } else {
+                    res[index--] = right;
+                    j--;
+                }
+            }
+        }
+        
+        return res;
+    }
+    
+    private int f(int x, int a, int b, int c) {
+        return a * x * x + b * x + c;
+    }
+    
+    public static void main(String[] args) {
+    	Sort_Transformed_Array tmp = new Sort_Transformed_Array();
+    	int[] nums = {-4, -2, 2, 4};
+    	int a = -1, b = 3, c = 5;
+    	int[] res = tmp.sortTransformedArray(nums, a, b, c);
+    	
+    	for (int i = 0; i < res.length; i++) {
+    		System.out.print(res[i]);
+    		System.out.print(" ");
+    	}
+    }
+	
+	
+	// Version 1
+	/*
     int a;
     int b;
     int c;
@@ -87,4 +164,6 @@ public class Sort_Transformed_Array {
     private int getValue(int x) {
         return a * x * x + b * x + c;
     }
+    
+    */
 }

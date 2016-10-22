@@ -6,63 +6,56 @@
  */
 public class Valid_Word_Abbreviation {
 	public boolean validWordAbbreviation(String word, String abbr) {
-        if (word == null && abbr == null) {
-            return true;
-        }
-        if (word == null) {
-            if (abbr.length() == 0) {
+        if (word == null || word.length() == 0) {
+            if (abbr == null || abbr.length() == 0) {
                 return true;
             } else {
                 return false;
             }
         }
         
-        if (abbr == null) {
-            if (word.length() == 0) {
-                return true;
-            } else {
-                return false;
-            }
+        if (abbr == null || abbr.length() == 0) {
+            return false;
         }
         
-        int i = 0, j = 0, count = 0;
-        while (i < abbr.length() && j < word.length()) {
-            if (isLetter(abbr.charAt(i))) {
+        int count = 0;
+        int i = 0, j = 0;
+        while (i < word.length() && j < abbr.length()) {
+            char c = abbr.charAt(j);
+            if (isLetter(c)) {
                 if (count > 0) {
-                    j += count;
+                    i += count;
                     count = 0;
                 }
-                if (abbr.charAt(i) != word.charAt(j)) {
-                    // not match
+                if (i >= word.length() || word.charAt(i) != c) {
                     return false;
-                } else {
-                    i++;
-                    j++;
                 }
-            } else {
-                count = count * 10 + (abbr.charAt(i) - '0');
                 i++;
+                j++;
+            } else {
+                if (count == 0 && c == '0') {
+                    return false;
+                }
+                count = count * 10 + (c - '0');
+                j++;
             }
         }
         
-        j += count;
-        return j == word.length();
+        i += count;
+        return i == word.length() && j == abbr.length();
     }
     
     private boolean isLetter(char c) {
-        if (c >= 'a' && c <= 'z') {
-            return true;
-        } else {
-            return false;
-        }
+        return c >= 'a' && c <= 'z';
     }
     
     public static void main(String[] args) {
     	Valid_Word_Abbreviation tmp = new Valid_Word_Abbreviation();
-//    	String word = "internationalization";
-    	String word = "apple";
-    	String abbr = "a2e";
+    	String word = "internationalization";
+//    	String word = "apple";
+//    	String abbr = "a2e";
 //    	String abbr = "i12iz4n";
+    	String abbr = "i5a11o1";
     	System.out.println(tmp.validWordAbbreviation(word, abbr));
     }
 }

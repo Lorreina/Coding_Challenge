@@ -1,0 +1,135 @@
+import java.util.Random;
+
+/**
+ * LeetCode
+ * 324. Wiggle Sort II
+ * @author lorreina
+ *
+ */
+public class Wiggle_Sort_II {
+	public void wiggleSort(int[] nums) {
+        if (nums == null || nums.length <= 1) {
+            return;
+        }
+        
+        shuffle(nums);
+        
+        int n = nums.length - 1;
+        int median = nums.length / 2;
+        int left = 0, right = n;
+        while (left < right) {
+            int index = partition(nums, left, right);
+            if (index == median) {
+                break;
+            } else if (index < median) {
+                left = index + 1;
+            } else {
+                right = index - 1;
+            }
+        }
+        
+        int medianValue = nums[median];
+        
+        // We can use three-way partitioning to arrange the numbers so that those larger than the median come first, then those equal to the median come next, and then those smaller than the median come last.
+
+        left = median - 1;
+        // shuffle median value togegher
+        int i = 0;
+        while (i <= left) {
+        	
+        }
+        for (int i = 0; i < left; i++) {
+            if (nums[i] == medianValue) {
+                swap(nums, i, left);
+                left--;
+            }
+        }
+        right = median + 1;
+        for (int j = n; j > right; j--) {
+            if (nums[j] == medianValue) {
+                swap(nums, j, right);
+                right++;
+            }
+        }
+        
+        // swap median to it's right place
+        int i = 0;
+        while (left <= median) {
+            swap(nums, i, left);
+            left++;
+            i += 2;
+        }
+        
+        int j = n;
+        if (n % 2 == 1) {
+            j = n - 1;
+        }
+        
+        while (right > median) {
+            swap(nums, j, right);
+            j -= 2;
+            right--;
+        }
+        
+        
+        i = 0;
+        j = n;
+        while (i < j) {
+            if (nums[i] == medianValue) {
+                i++;
+            } else if (nums[j] == medianValue) {
+                j--;
+            } else {
+                swap(nums, i, j);
+                i += 2;
+                j -= 2;
+            }
+        }
+        
+        return;
+    }
+    
+    private int partition(int[] nums, int left, int right) {
+        int lp = left - 1;
+        int rp = right;
+        
+        int pivot = nums[right];
+        
+        while (true) {
+            while (lp < rp && nums[++lp] < pivot) {};
+            while (lp < rp && nums[--rp] > pivot) {};
+            if (lp >= rp) {
+                break;
+            }
+            swap(nums, lp, rp);
+        }
+        
+        swap(nums, lp, right);
+        
+        return lp;
+    }
+    
+    private void shuffle(int[] nums) {
+        Random rand = new Random();
+        for (int i = 0; i < nums.length; i++) {
+            int index = rand.nextInt(i + 1);
+            swap(nums, i, index);
+        }
+    }
+    
+    private void swap(int[] nums, int i, int j) {
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
+    }
+    
+    public static void main(String[] args) {
+    	Wiggle_Sort_II tmp = new Wiggle_Sort_II();
+    	int[] nums = {1,2,3,1,4,5,2,3,4,4,3,3,3};
+    	tmp.wiggleSort(nums);
+    	for (int i = 0; i < nums.length; i++) {
+    		System.out.print(nums[i]);
+    		System.out.print(",");
+    	}
+    }
+}
